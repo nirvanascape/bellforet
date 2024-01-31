@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-room-guide-detail">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>객실안내</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main room-guide-detail">
+
+            <div class="reservation-visual" style="background-image: url(../../assets/images/course-guide/room/sub_condoinfo_img.png)">
+                <h2>객실 안내</h2>
+                <p>
+                    원남호의 정취가 한눈에 들어오는 전망에서<br>
+                    꿈처럼 달콤한 휴식을 선사합니다.
+                </p>
+            </div>
+
+            <div style="padding:0 20px;">
+                
+                <!-- 페이지이동 리스트 -->
+                <div class="res-page-list drop-content-reverse">
+
+                    <a href="#" role="button" class="title drop-btn">
+                        <h3>펫포레 객실안내</h3>
+                        <span></span>
+                    </a>
+                    <ul class="check page-list">
+                        <li>
+                            <a href="#">콘도메인</a>
+                        </li>
+                        <li>
+                            <a href="#">벨라고 객실안내</a>
+                        </li>
+                        <li>
+                            <a href="#">벨라고 예약</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">펫포레 객실안내</a>
+                        </li>
+                        <li>
+                            <a href="#">펫포레 예약</a>
+                        </li>
+                        <li>
+                            <a href="#">펫포레 부대시설</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <!-- //페이지이동 리스트 -->
+
+                <!-- 탭 -->
+                <div class="tab view-border">
+
+                    <!-- 탭 리스트 -->
+                    <ul class="tab-menu">
+                        <li class="active">16평형</li>
+                        <li>35평형</li>
+                        <li>51평형</li>
+                    </ul>
+                    <!-- //탭 리스트 -->
+
+                    <div class="tab-content">
+
+                        <!-- 첫번째 탭 콘텐츠 부분 -->
+                        <div>
+
+                            <!-- 이미지 스와이프 -->
+                            <div class="hole-img-swiper">
+        
+                                <div class="swiper-container mySwiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img1.png" alt="펫포레 내부 이미지1">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img2.png" alt="펫포레 내부 이미지2">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img3.png" alt="펫포레 내부 이미지3">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img4.png" alt="펫포레 내부 이미지4">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img5.png" alt="펫포레 내부 이미지5">
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div> 
+
+                            </div>
+                            <!-- //이미지 스와이프 -->    
+
+                            <div class="room-title-info" style="align-items: flex-start;">
+                                <strong>16평형</strong>
+                                <div>
+                                    <p class="res-icon user">기준인원 2명</p>
+                                    <p class="res-icon pet">1마리</p>
+                                </div>
+                            </div>
+
+                            <!-- <article class="res-price-info">
+                                <dl>
+                                    <dt>온라인회원</dt>
+                                    <div style="text-align:right">
+                                        <dd class="original-price">정상가:210,000원</dd>
+                                        <dd class="members-price"><strong>할인가:126,000원</strong></dd>
+                                    </div>
+                                </dl>
+                            </article> -->
+
+                            <!-- 상세정보 리스트 -->
+                            <div class="accordion type-2">
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 반려견 관련안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">               
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>체크인: 15:00 / 체크아웃 : 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 2인, 반려견 1마리<br> 
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong></dd>
+                                                <dd>15kg 미만 반려견 입실 가능, 초과시 입실 불가</dd>
+                                                <dd>생후 6개월 이상 반려견</dd>
+                                                <dd>2년 이내 광견병 접종 확인증 지참 필수<br>-> 프론트 체크인시 제출</dd>
+                                                <dd>동물보호법 동물등록제에 따라 동물등록을 한 반려견
+                                                    (내.외장형 무선식별장치))</dd>
+                                                <dd>어떠한 전염성도 없는 반려견</dd>
+                                                <dd>견주의 통제가 가능한 길들여진 반려견</dd>
+                                                <dd>반려견 외 동물 입장 불가</dd>
+                                                <dd>관련문의 043-926-1001~3</dd>
+                                                <p><strong><span class="red">※ 입장제한 견종 : 동물보호법에 따른 맹견</span></strong></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 객실 옵션 ></dt>
+                                                <dd>반려견 침대, 배게</dd>
+                                                <dd>반려견 계단, 일반 쇼파 보호용 패드</dd>
+                                                <dd>배변판, 배변 패드, 반려견 전용 쓰레기통</dd>
+                                                <dd>반려견 식기</dd>
+                                                <dd>반려견 욕조, 반려견 전용 수건</dd>
+                                                <dd>드라이기 거치대</dd>                                                
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 웰컴키트 ></dt>
+                                                <dd>더스트백 / 간식패키지 4종 / 풉백+배변봉투15장 /
+                                                    물티슈2 / 욕실용품 패키지3종</dd>
+                                                <dd>욕실용품 패키지(16평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) /   귀세정제1</dd>
+                                                <dd>욕실용품 패키지(35평, 51평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) / 미스트1</dd>
+                                                <dd>웰컴키트 추가 구매 시 1set 20,000원</dd>
+                                                <dd>웰컴키트 제공 기준 (객실당 1개 , 2마리당 1개 지급)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+    
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실예약안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><입/퇴실시간 안내 ></strong></dt>
+                                                <dd>체크인: 15:00 / 체크아웃: 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 2인, 반려견 정원 1마리<br>
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong><br>
+                                                    · 얼리 체크인 / 레이트 체크아웃 최대 2시간 (시간당 1만원 추가비용 발생) : 비수기 적용<br>
+                                                    · 오후 5시 이후 1박 숙박 요금이 부여됩니다.</dd>
+                                                <dd>벌점 7점이상 도달 시 예약정지 1개월입니다.</dd>
+                                                <dd>예약정지시에는 예약을 할 수 없습니다.</dd>
+                                                <dd>콘도회원 엑티비티 할인혜택 이용 시 회원카드 필수
+                                                    지참해야 할인가 적용 가능합니다.<br>
+                                                    (놀이기구 , 회전그네는 엑티비티 할인에서 제외됩니다)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 기본정보</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <p style="margin-bottom:18px;">벨라고 콘도 103동 입니다.</p>
+                                            <dl class="left-bar">
+                                                <dt><strong><객실 이용 시 유의사항 ></strong></dt>
+                                                <dd>프런트에서 회원카드와 예약번호를 제시한 후 객실을 배정합니다. </dd>
+                                                <dd>회원이 아닌 경우(회원 카드대여) 준회원 요금이 적용됩니다. </dd>
+                                                <dd>블랙스톤 벨포레 리조트는 자율퇴실 점검제도를 실시하고 있습니다.</dd>
+                                                <dd>파손된 물품이 있는 경우 프런트에 문의하여 주십시오.</dd>
+                                                <dd>화재 및 폭발위험이 있는 휴대용 인덕션, 전기그릴, 가스버너 등의 반입 금지입니다.</dd>
+                                                <dd>지나친 음주가무, 고성방가, 폭력과 같은 소란행위에 대해 경고 및 퇴실 조치될 수 있습니다.</dd>
+                                                <dd>객실 내 비품은 회원님의 소중한 자산입니다. 파손 및 손ㆍ망실시 요금이 부과됩니다.</dd>
+                                                <dd>귀중품 보관은 프런트에 보관해주시기 바랍니다. 보관하지 않은 물품은 분실 시 책임 지지 않습니다.</dd>
+                                                <dd>분실물 처리(습득한 물품은 객실관리에서 접수, 보관하며 고객요청시 착불요금으로 택배 발송)</dd>
+                                                <dd>객실 구조 및 인테리어는 객실 위치에 따라 이미지와 다를 수 있습니다.</dd>
+                                                <dd>모든 객실은 금연입니다.</dd>
+                                                <dd>투숙 시 쓰레기는 반드시 분리수거 해주시기 바랍니다.</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실옵션</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="row">
+                                                <dt>룸구성 :</dt>
+                                                <dd>&nbsp;침실, 화장실</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>침대 :</dt>
+                                                <dd>&nbsp;16평 트윈 (인원추가 불가)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가구류 :</dt>
+                                                <dd>&nbsp;침실, 2인용 테이블, 의자 2개</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가전류 :</dt>
+                                                <dd>&nbsp;TV, 미니냉장고, 커피포트, 에어컨, 드라이기 *(전자레인지 없음)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>식기류 :</dt>
+                                                <dd>&nbsp;머그컵 2개</dd>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="row">
+                                                <dt>객실재정비 :</dt>
+                                                <dd>&nbsp;16평 30,000원</dd>
+                                            </dl>
+                                            <p>
+                                                [오전 10시 이전 프론트에 사전 요청]<br>
+                                                - 3박 이상 투숙 시 1회 무료 객실정비를 제공하고
+                                                    있습니다 .<br>
+                                                - 2박 투숙 시 간단 재정비(생수, 타올 교체)
+                                            </p>
+                                            <p>타올 추가 시 [1,000원/장], 생수 추가 시 [1,000원/장]</p>
+                                        </article>    
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용수칙</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>객실 내 반려견만 두고 외출 불가</dd>
+                                                <dd>객실 내 직원 방문시 케이지 또는 목줄 착용</dd>
+                                                <dd>반려견은 제공되는 전용침대 외 일반침대 이용 불가</dd>
+                                                <dd>반려견으로 인한 객실 내 오염 발생시 견주 즉시 처리</dd>
+                                                <dd>벨라고 펫룸은 금연이 원칙이며, 취사가 불가합니다.</dd>
+                                                <p><span class="red">※ 반려견으로 인한 인적 사고, 피해 발생시 전적인 보호자 책임 및 배상</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><리조트 내 반려견 동반 입장 사업장></strong></dt>
+                                                <dd>펫포레 하우스 (콘도 펫룸 객실)</dd>
+                                                <dd>펫포레 플레이그라운드 (반려견 놀이터)</dd>
+                                                <dd>펫포레 힐링코스 (반려견 산책로)</dd>
+                                                <p><span class="red">※ 지정된 사업장 외 반려견 동반 입장이 불가합니다.</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><‘브리스킷346’ 딜리버리 서비스 안내></strong></dt>
+                                                <dd>벨포레 맛집 브리스킷346 훈연 스모크 바베큐 등 다양한 메뉴를 배달서비스를 통해 객실에서 편리하게 즐기세요.<br>
+                                                · 운영 : 월~일 / 11:30~20:00<br>
+                                                · 문의 : 043-926-1077
+                                                </dd>
+                                                <p><span class="red">※ 기타 식음은 take out 을 권장드립니다. (벨포레 홈페이지 푸드존 참조)</span></p>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용규정</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><인터넷&비회원></strong></dt>
+                                                <dd>숙박 당일 취소 시: 객실 요금 전액 부과</dd>
+                                                <dd>숙박 1일전 취소 시: 객실요금의 90% 부과</dd>
+                                                <dd>숙박 2일전 취소 시: 객실요금의 80% 부과</dd>
+                                                <dd>숙박 3일전 취소 시: 객실요금의 70% 부과</dd>
+                                                <dd>숙박 4일전 취소 시: 객실요금의 50% 부과</dd>
+                                                <dd>숙박 5일전 취소 시: 객실요금의 40% 부과</dd>
+                                                <dd>숙박 6일전 취소 시: 객실요금의 30% 부과</dd>                                                
+                                            </dl>
+                                            <p style="margin-top:28px;">금요일,토요일은 주말에 포함됩니다. /
+                                                연휴, 공휴일 전날 또한 주말에 포함됩니다.</p>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><콘도회원 객실 위약사항></strong></dt>
+                                                <dd>No-Show: 벌점 7점</dd>
+                                                <dd>당일 취소: 벌점 7점</dd>
+                                                <dd>1일전 취소: 벌점 6점</dd>
+                                                <dd>2일전 취소: 벌점 5점</dd>
+                                                <dd>3일전 취소: 벌점 4점</dd>
+                                                <dd>4일전 취소: 벌점 3점</dd>
+                                                <dd>5일전 취소: 벌점 2점</dd>
+                                                <dd>6일전 취소: 벌점 1점</dd>
+                                                <dd>7일전 취소: 17:00 이전 가능<br>
+                                                    (17:00 이후는 6일 전 취소 적용)</dd>                                                
+                                            </dl> 
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                            </div>
+                            <!-- //상세정보 리스트 -->
+
+                        </div>
+                        <!-- //첫번째 탭 콘텐츠 부분 -->
+
+                        <!-- 두번째 탭 콘텐츠 부분 -->
+                        <div>
+
+                            <!-- 이미지 스와이프 -->
+                            <div class="hole-img-swiper">
+        
+                                <div class="swiper-container mySwiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img1.png" alt="펫포레 내부 이미지1">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img2.png" alt="펫포레 내부 이미지2">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img3.png" alt="펫포레 내부 이미지3">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img4.png" alt="펫포레 내부 이미지4">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img5.png" alt="펫포레 내부 이미지5">
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div> 
+
+                            </div>
+                            <!-- //이미지 스와이프 -->    
+
+                            <div class="room-title-info" style="align-items: flex-start;">
+                                <strong>35평형</strong>
+                                <div>
+                                    <p class="res-icon user">기준인원 4명</p>
+                                    <p class="res-icon pet">2마리</p>
+                                </div>
+                            </div>
+
+                            <!-- <article class="res-price-info">
+                                <dl>
+                                    <dt>온라인회원</dt>
+                                    <div style="text-align:right">
+                                        <dd class="original-price">정상가:210,000원</dd>
+                                        <dd class="members-price"><strong>할인가:126,000원</strong></dd>
+                                    </div>
+                                </dl>
+                            </article> -->
+
+                            <!-- 상세정보 리스트 -->
+                            <div class="accordion type-2">
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 반려견 관련안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">               
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>체크인: 15:00 / 체크아웃 : 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 4인, 반려견 2마리<br> 
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong></dd>
+                                                <dd>15kg 미만 반려견 입실 가능, 초과시 입실 불가</dd>
+                                                <dd>생후 6개월 이상 반려견</dd>
+                                                <dd>2년 이내 광견병 접종 확인증 지참 필수<br>-> 프론트 체크인시 제출</dd>
+                                                <dd>동물보호법 동물등록제에 따라 동물등록을 한 반려견
+                                                    (내.외장형 무선식별장치))</dd>
+                                                <dd>어떠한 전염성도 없는 반려견</dd>
+                                                <dd>견주의 통제가 가능한 길들여진 반려견</dd>
+                                                <dd>반려견 외 동물 입장 불가</dd>
+                                                <dd>관련문의 043-926-1001~3</dd>
+                                                <p><strong><span class="red">※ 입장제한 견종 : 동물보호법에 따른 맹견</span></strong></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 객실 옵션 ></dt>
+                                                <dd>반려견 침대, 배게</dd>
+                                                <dd>반려견 계단, 일반 쇼파 보호용 패드</dd>
+                                                <dd>배변판, 배변 패드, 반려견 전용 쓰레기통</dd>
+                                                <dd>반려견 식기</dd>
+                                                <dd>반려견 욕조, 반려견 전용 수건</dd>
+                                                <dd>드라이기 거치대</dd>                                                
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 웰컴키트 ></dt>
+                                                <dd>더스트백 / 간식패키지 4종 / 풉백+배변봉투15장 /
+                                                    물티슈2 / 욕실용품 패키지3종</dd>
+                                                <dd>욕실용품 패키지(16평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) /   귀세정제1</dd>
+                                                <dd>욕실용품 패키지(35평, 51평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) / 미스트1</dd>
+                                                <dd>웰컴키트 추가 구매 시 1set 20,000원</dd>
+                                                <dd>웰컴키트 제공 기준 (객실당 1개 , 2마리당 1개 지급)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+    
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실예약안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><입/퇴실시간 안내 ></strong></dt>
+                                                <dd>체크인: 15:00 / 체크아웃: 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 2인, 반려견 정원 1마리<br>
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong><br>
+                                                    · 얼리 체크인 / 레이트 체크아웃 최대 2시간 (시간당 1만원 추가비용 발생) : 비수기 적용<br>
+                                                    · 오후 5시 이후 1박 숙박 요금이 부여됩니다.</dd>
+                                                <dd>벌점 7점이상 도달 시 예약정지 1개월입니다.</dd>
+                                                <dd>예약정지시에는 예약을 할 수 없습니다.</dd>
+                                                <dd>콘도회원 엑티비티 할인혜택 이용 시 회원카드 필수
+                                                    지참해야 할인가 적용 가능합니다.<br>
+                                                    (놀이기구 , 회전그네는 엑티비티 할인에서 제외됩니다)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 기본정보</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <p style="margin-bottom:18px;">벨라고 콘도 103동 입니다.</p>
+                                            <dl class="left-bar">
+                                                <dt><strong><객실 이용 시 유의사항 ></strong></dt>
+                                                <dd>프런트에서 회원카드와 예약번호를 제시한 후 객실을 배정합니다. </dd>
+                                                <dd>회원이 아닌 경우(회원 카드대여) 준회원 요금이 적용됩니다. </dd>
+                                                <dd>블랙스톤 벨포레 리조트는 자율퇴실 점검제도를 실시하고 있습니다.</dd>
+                                                <dd>파손된 물품이 있는 경우 프런트에 문의하여 주십시오.</dd>
+                                                <dd>화재 및 폭발위험이 있는 휴대용 인덕션, 전기그릴, 가스버너 등의 반입 금지입니다.</dd>
+                                                <dd>지나친 음주가무, 고성방가, 폭력과 같은 소란행위에 대해 경고 및 퇴실 조치될 수 있습니다.</dd>
+                                                <dd>객실 내 비품은 회원님의 소중한 자산입니다. 파손 및 손ㆍ망실시 요금이 부과됩니다.</dd>
+                                                <dd>귀중품 보관은 프런트에 보관해주시기 바랍니다. 보관하지 않은 물품은 분실 시 책임 지지 않습니다.</dd>
+                                                <dd>분실물 처리(습득한 물품은 객실관리에서 접수, 보관하며 고객요청시 착불요금으로 택배 발송)</dd>
+                                                <dd>객실 구조 및 인테리어는 객실 위치에 따라 이미지와 다를 수 있습니다.</dd>
+                                                <dd>모든 객실은 금연입니다.</dd>
+                                                <dd>투숙 시 쓰레기는 반드시 분리수거 해주시기 바랍니다.</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실옵션</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="row">
+                                                <dt>룸구성 :</dt>
+                                                <dd>&nbsp;침실 1 + 거실 1 (침실內 화장실)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>침대 :</dt>
+                                                <dd>&nbsp;더블, 트윈 (2가지 타입/선택불가)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가구류 :</dt>
+                                                <dd>&nbsp;침실, 소파, 식탁, 테이블, 의자</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가전류 :</dt>
+                                                <dd>&nbsp;TV, 냉장고, 전자레인지, 커피포트, 에어컨, 드라이기</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>식기류 :</dt>
+                                                <dd>&nbsp;머그컵, 밥공기, 국그릇, 원형접시, 수저, 와인 오프너</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>기타 :</dt>
+                                                <dd>&nbsp;이불 2채 배치</dd>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="row">
+                                                <dt>침구추가&인원추가 :</dt>
+                                                <dd>&nbsp;30,000원 / (4월 1일부터 적용)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>객실재정비 :</dt>
+                                                <dd>&nbsp;35평 50,000원</dd>
+                                            </dl>
+                                            <p>
+                                                [주방 제외한 전체 정비 / 오전 10시 이전 프론트에 사전 요청]<br>
+                                                - 3박 이상 투숙 시 1회 무료 객실재정비를 제공하고
+                                                    있습니다 .<br>
+                                                - 2박 투숙 시 간단 재정비(생수, 타올 교체)
+                                            </p>
+                                            <p>객실 타올 추가 시 [1,000원/장], 생수 추가 시 [1,000원/장]</p>
+                                        </article>    
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용수칙</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>객실 내 반려견만 두고 외출 불가</dd>
+                                                <dd>객실 내 직원 방문시 케이지 또는 목줄 착용</dd>
+                                                <dd>반려견은 제공되는 전용침대 외 일반침대 이용 불가</dd>
+                                                <dd>반려견으로 인한 객실 내 오염 발생시 견주 즉시 처리</dd>
+                                                <dd>벨라고 펫룸은 금연이 원칙이며, 취사가 불가합니다.</dd>
+                                                <p><span class="red">※ 반려견으로 인한 인적 사고, 피해 발생시 전적인 보호자 책임 및 배상</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><리조트 내 반려견 동반 입장 사업장></strong></dt>
+                                                <dd>펫포레 하우스 (콘도 펫룸 객실)</dd>
+                                                <dd>펫포레 플레이그라운드 (반려견 놀이터)</dd>
+                                                <dd>펫포레 힐링코스 (반려견 산책로)</dd>
+                                                <p><span class="red">※ 지정된 사업장 외 반려견 동반 입장이 불가합니다.</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><‘브리스킷346’ 딜리버리 서비스 안내></strong></dt>
+                                                <dd>벨포레 맛집 브리스킷346 훈연 스모크 바베큐 등 다양한 메뉴를 배달서비스를 통해 객실에서 편리하게 즐기세요.<br>
+                                                · 운영 : 월~일 / 11:30~20:00<br>
+                                                · 문의 : 043-926-1077
+                                                </dd>
+                                                <p><span class="red">※ 기타 식음은 take out 을 권장드립니다. (벨포레 홈페이지 푸드존 참조)</span></p>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용규정</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><인터넷&비회원></strong></dt>
+                                                <dd>숙박 당일 취소 시: 객실 요금 전액 부과</dd>
+                                                <dd>숙박 1일전 취소 시: 객실요금의 90% 부과</dd>
+                                                <dd>숙박 2일전 취소 시: 객실요금의 80% 부과</dd>
+                                                <dd>숙박 3일전 취소 시: 객실요금의 70% 부과</dd>
+                                                <dd>숙박 4일전 취소 시: 객실요금의 50% 부과</dd>
+                                                <dd>숙박 5일전 취소 시: 객실요금의 40% 부과</dd>
+                                                <dd>숙박 6일전 취소 시: 객실요금의 30% 부과</dd>                                                
+                                            </dl>
+                                            <p style="margin-top:28px;">금요일,토요일은 주말에 포함됩니다. /
+                                                연휴, 공휴일 전날 또한 주말에 포함됩니다.</p>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><콘도회원 객실 위약사항></strong></dt>
+                                                <dd>No-Show: 벌점 7점</dd>
+                                                <dd>당일 취소: 벌점 7점</dd>
+                                                <dd>1일전 취소: 벌점 6점</dd>
+                                                <dd>2일전 취소: 벌점 5점</dd>
+                                                <dd>3일전 취소: 벌점 4점</dd>
+                                                <dd>4일전 취소: 벌점 3점</dd>
+                                                <dd>5일전 취소: 벌점 2점</dd>
+                                                <dd>6일전 취소: 벌점 1점</dd>
+                                                <dd>7일전 취소: 17:00 이전 가능<br>
+                                                    (17:00 이후는 6일 전 취소 적용)</dd>                                                
+                                            </dl> 
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                            </div>
+                            <!-- //상세정보 리스트 -->
+
+                        </div>
+                        <!-- //두번째 탭 콘텐츠 부분 -->
+
+                        <!-- 세번째 탭 콘텐츠 부분 -->
+                        <div>
+
+                            <!-- 이미지 스와이프 -->
+                            <div class="hole-img-swiper">
+        
+                                <div class="swiper-container mySwiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img1.png" alt="펫포레 내부 이미지1">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img2.png" alt="펫포레 내부 이미지2">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img3.png" alt="펫포레 내부 이미지3">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img4.png" alt="펫포레 내부 이미지4">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/pet-img5.png" alt="펫포레 내부 이미지5">
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div> 
+
+                            </div>
+                            <!-- //이미지 스와이프 -->    
+
+                            <div class="room-title-info" style="align-items: flex-start;">
+                                <strong>51평형</strong>
+                                <div>
+                                    <p class="res-icon user">기준인원 6명</p>
+                                    <p class="res-icon pet">3마리(+1)</p>
+                                </div>
+                            </div>
+
+                            <!-- <article class="res-price-info">
+                                <dl>
+                                    <dt>온라인회원</dt>
+                                    <div style="text-align:right">
+                                        <dd class="original-price">정상가:210,000원</dd>
+                                        <dd class="members-price"><strong>할인가:126,000원</strong></dd>
+                                    </div>
+                                </dl>
+                            </article> -->
+
+                            <!-- 상세정보 리스트 -->
+                            <div class="accordion type-2">
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 반려견 관련안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">               
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>체크인: 15:00 / 체크아웃 : 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 6인, 반려견 3마리(초과입장 1마리, 초과시 비용3만원)<br> 
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong></dd>
+                                                <dd>15kg 미만 반려견 입실 가능, 초과시 입실 불가</dd>
+                                                <dd>생후 6개월 이상 반려견</dd>
+                                                <dd>2년 이내 광견병 접종 확인증 지참 필수<br>-> 프론트 체크인시 제출</dd>
+                                                <dd>동물보호법 동물등록제에 따라 동물등록을 한 반려견
+                                                    (내.외장형 무선식별장치))</dd>
+                                                <dd>어떠한 전염성도 없는 반려견</dd>
+                                                <dd>견주의 통제가 가능한 길들여진 반려견</dd>
+                                                <dd>반려견 외 동물 입장 불가</dd>
+                                                <dd>관련문의 043-926-1001~3</dd>
+                                                <p><strong><span class="red">※ 입장제한 견종 : 동물보호법에 따른 맹견</span></strong></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 객실 옵션 ></dt>
+                                                <dd>반려견 침대, 배게</dd>
+                                                <dd>반려견 계단, 일반 쇼파 보호용 패드</dd>
+                                                <dd>배변판, 배변 패드, 반려견 전용 쓰레기통</dd>
+                                                <dd>반려견 식기</dd>
+                                                <dd>반려견 욕조, 반려견 전용 수건</dd>
+                                                <dd>드라이기 거치대</dd>                                                
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar mint">
+                                                <dt>< 반려견 웰컴키트 ></dt>
+                                                <dd>더스트백 / 간식패키지 4종 / 풉백+배변봉투15장 /
+                                                    물티슈2 / 욕실용품 패키지3종</dd>
+                                                <dd>욕실용품 패키지(16평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) /   귀세정제1</dd>
+                                                <dd>욕실용품 패키지(35평, 51평) : 샴푸2 / 입욕제2
+                                                    (파우더워시) / 미스트1</dd>
+                                                <dd>웰컴키트 추가 구매 시 1set 20,000원</dd>
+                                                <dd>웰컴키트 제공 기준 (객실당 1개 , 2마리당 1개 지급)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+    
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실예약안내</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><입/퇴실시간 안내 ></strong></dt>
+                                                <dd>체크인: 15:00 / 체크아웃: 11:00</dd>
+                                                <dd><strong><span class="red">견주/동반인 정원 2인, 반려견 정원 1마리<br>
+                                                    ※반려견 초과입장 불가<br>
+                                                    ※ 보호자 기준 : 마리당 140cm 이상 보호자 동반</span></strong><br>
+                                                    · 얼리 체크인 / 레이트 체크아웃 최대 2시간 (시간당 1만원 추가비용 발생) : 비수기 적용<br>
+                                                    · 오후 5시 이후 1박 숙박 요금이 부여됩니다.</dd>
+                                                <dd>벌점 7점이상 도달 시 예약정지 1개월입니다.</dd>
+                                                <dd>예약정지시에는 예약을 할 수 없습니다.</dd>
+                                                <dd>콘도회원 엑티비티 할인혜택 이용 시 회원카드 필수
+                                                    지참해야 할인가 적용 가능합니다.<br>
+                                                    (놀이기구 , 회전그네는 엑티비티 할인에서 제외됩니다)</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 기본정보</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <p style="margin-bottom:18px;">벨라고 콘도 103동 입니다.</p>
+                                            <dl class="left-bar">
+                                                <dt><strong><객실 이용 시 유의사항 ></strong></dt>
+                                                <dd>프런트에서 회원카드와 예약번호를 제시한 후 객실을 배정합니다. </dd>
+                                                <dd>회원이 아닌 경우(회원 카드대여) 준회원 요금이 적용됩니다. </dd>
+                                                <dd>블랙스톤 벨포레 리조트는 자율퇴실 점검제도를 실시하고 있습니다.</dd>
+                                                <dd>파손된 물품이 있는 경우 프런트에 문의하여 주십시오.</dd>
+                                                <dd>화재 및 폭발위험이 있는 휴대용 인덕션, 전기그릴, 가스버너 등의 반입 금지입니다.</dd>
+                                                <dd>지나친 음주가무, 고성방가, 폭력과 같은 소란행위에 대해 경고 및 퇴실 조치될 수 있습니다.</dd>
+                                                <dd>객실 내 비품은 회원님의 소중한 자산입니다. 파손 및 손ㆍ망실시 요금이 부과됩니다.</dd>
+                                                <dd>귀중품 보관은 프런트에 보관해주시기 바랍니다. 보관하지 않은 물품은 분실 시 책임 지지 않습니다.</dd>
+                                                <dd>분실물 처리(습득한 물품은 객실관리에서 접수, 보관하며 고객요청시 착불요금으로 택배 발송)</dd>
+                                                <dd>객실 구조 및 인테리어는 객실 위치에 따라 이미지와 다를 수 있습니다.</dd>
+                                                <dd>모든 객실은 금연입니다.</dd>
+                                                <dd>투숙 시 쓰레기는 반드시 분리수거 해주시기 바랍니다.</dd>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 객실옵션</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="row">
+                                                <dt>룸구성 :</dt>
+                                                <dd>&nbsp;침실 2 + 거실 1</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>침대 :</dt>
+                                                <dd>&nbsp;더블, 트윈 (2가지 타입/선택불가)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가구류 :</dt>
+                                                <dd>&nbsp;침실, 소파, 식탁, 테이블, 의자</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>가전류 :</dt>
+                                                <dd>&nbsp;TV, 냉장고, 전자레인지, 커피포트, 에어컨, 드라이기</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>식기류 :</dt>
+                                                <dd>&nbsp;머그컵, 밥그릇, 국그릇, 원형접시, 수저, 와인 오프너</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>기타 :</dt>
+                                                <dd>&nbsp;이불 2채 배치</dd>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="row">
+                                                <dt>침구추가&인원추가 :</dt>
+                                                <dd>&nbsp;30,000원 / (4월 1일부터 적용)</dd>
+                                            </dl>
+                                            <dl class="row">
+                                                <dt>객실재정비 :</dt>
+                                                <dd>&nbsp;51평 50,000원</dd>
+                                            </dl>
+                                            <p>
+                                                [주방 제외한 전체 정비 / 오전 10시 이전 프론트에 사전 요청]<br>
+                                                - 3박 이상 투숙 시 1회 무료 객실재정비를 제공하고
+                                                    있습니다 .<br>
+                                                - 2박 투숙 시 간단 재정비(생수, 타올 교체)
+                                            </p>
+                                            <p>객실 타올 추가 시 [1,000원/장], 생수 추가 시 [1,000원/장]</p>
+                                        </article>    
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용수칙</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt></dt>
+                                                <dd>객실 내 반려견만 두고 외출 불가</dd>
+                                                <dd>객실 내 직원 방문시 케이지 또는 목줄 착용</dd>
+                                                <dd>반려견은 제공되는 전용침대 외 일반침대 이용 불가</dd>
+                                                <dd>반려견으로 인한 객실 내 오염 발생시 견주 즉시 처리</dd>
+                                                <dd>벨라고 펫룸은 금연이 원칙이며, 취사가 불가합니다.</dd>
+                                                <p><span class="red">※ 반려견으로 인한 인적 사고, 피해 발생시 전적인 보호자 책임 및 배상</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><리조트 내 반려견 동반 입장 사업장></strong></dt>
+                                                <dd>펫포레 하우스 (콘도 펫룸 객실)</dd>
+                                                <dd>펫포레 플레이그라운드 (반려견 놀이터)</dd>
+                                                <dd>펫포레 힐링코스 (반려견 산책로)</dd>
+                                                <p><span class="red">※ 지정된 사업장 외 반려견 동반 입장이 불가합니다.</span></p>
+                                            </dl>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><‘브리스킷346’ 딜리버리 서비스 안내></strong></dt>
+                                                <dd>벨포레 맛집 브리스킷346 훈연 스모크 바베큐 등 다양한 메뉴를 배달서비스를 통해 객실에서 편리하게 즐기세요.<br>
+                                                · 운영 : 월~일 / 11:30~20:00<br>
+                                                · 문의 : 043-926-1077
+                                                </dd>
+                                                <p><span class="red">※ 기타 식음은 take out 을 권장드립니다. (벨포레 홈페이지 푸드존 참조)</span></p>
+                                            </dl>
+                                        </article>
+                                    </section>
+                                </div>
+
+                                <div class="accordion-item">
+
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <h4 class="accordion-title">· 이용규정</h4>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+
+                                    <section class="accordion-content">
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><인터넷&비회원></strong></dt>
+                                                <dd>숙박 당일 취소 시: 객실 요금 전액 부과</dd>
+                                                <dd>숙박 1일전 취소 시: 객실요금의 90% 부과</dd>
+                                                <dd>숙박 2일전 취소 시: 객실요금의 80% 부과</dd>
+                                                <dd>숙박 3일전 취소 시: 객실요금의 70% 부과</dd>
+                                                <dd>숙박 4일전 취소 시: 객실요금의 50% 부과</dd>
+                                                <dd>숙박 5일전 취소 시: 객실요금의 40% 부과</dd>
+                                                <dd>숙박 6일전 취소 시: 객실요금의 30% 부과</dd>                                                
+                                            </dl>
+                                            <p style="margin-top:28px;">금요일,토요일은 주말에 포함됩니다. /
+                                                연휴, 공휴일 전날 또한 주말에 포함됩니다.</p>
+                                        </article>
+                                        <article>
+                                            <dl class="left-bar">
+                                                <dt><strong><콘도회원 객실 위약사항></strong></dt>
+                                                <dd>No-Show: 벌점 7점</dd>
+                                                <dd>당일 취소: 벌점 7점</dd>
+                                                <dd>1일전 취소: 벌점 6점</dd>
+                                                <dd>2일전 취소: 벌점 5점</dd>
+                                                <dd>3일전 취소: 벌점 4점</dd>
+                                                <dd>4일전 취소: 벌점 3점</dd>
+                                                <dd>5일전 취소: 벌점 2점</dd>
+                                                <dd>6일전 취소: 벌점 1점</dd>
+                                                <dd>7일전 취소: 17:00 이전 가능<br>
+                                                    (17:00 이후는 6일 전 취소 적용)</dd>                                                
+                                            </dl> 
+                                        </article>
+                                    </section>
+
+                                </div>
+
+                            </div>
+                            <!-- //상세정보 리스트 -->
+
+                        </div>
+                        <!-- //세번째 탭 콘텐츠 부분 -->
+
+                    </div>
+
+                    <!-- 탭 리스트 -->
+                    <ul class="tab-menu tab-list-2">
+                        <li class="active">16평형</li>
+                        <li>35평형</li>
+                        <li>51평형</li>
+                    </ul>
+                    <!-- //탭 리스트 -->
+
+                </div>
+                <!-- //탭 -->
+
+                <div class="general-btn">
+                    <button type="button" class="btn-1 mint">실시간 예약</button>
+                    <!-- 활성화 class="mint, white" / 비활성화 class="grey" -->
+                </div>
+
+                <article class="res-price-info-l">
+                    <h4 class="title-lar">콘도 관련 문의사항</h4>
+                    <dl class="flex-c title-lar">
+                        <dt>벨포레 프론트 :</dt>
+                        <dd>&nbsp;1566-0162</dd>
+                    </dl>
+                </article>
+
+            </div>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="padding:30px 20px 25px;">
+
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 60000,
+            },
+            loop : true, 
+        });
+
+        //accordion list 제목 클릭되면 scrollTop 이동
+        $('.accordion button').on('click', function(e){
+            var target = $(e.target);
+            var offset = target.offset();
+            var winH = $(window).height();
+            $('html, body').animate({scrollTop : (offset.top - winH/3)}, 200);
+        })
+
+    </script>
+
+</body>
+
+</html>

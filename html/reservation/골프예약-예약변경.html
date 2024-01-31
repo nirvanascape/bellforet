@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-reservation-golf-change">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>예약변경</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main reservation-golf-change">
+
+            <!-- 예약시간 선택 -->
+            <article class="reservation-time">
+
+                <div class="top">
+                    <span>시간선택</span>
+                    <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">5시</option>
+                        <option value="">6시</option>
+                        <option value="">7시</option>
+                        <option value="">8시</option>
+                        <option value="">9시</option>
+                        <option value="">10시</option>
+                        <option value="">11시</option>
+                        <option value="">12시</option>
+                        <option value="">13시</option>
+                        <option value="">14시</option>
+                        <option value="">15시</option>
+                    </select>
+                </div>
+
+                <!-- 코스 리스트 -->
+                <div class="course-list tab">
+
+                    <ul class="tab-menu">
+                        <li class="active">전체코스</li>
+                        <li>Mountain View</li>
+                        <li>Lake View</li>
+                    </ul>
+
+                    <!-- 탭 콘텐츠 -->
+                    <div class="tab-content">
+                        <!-- 첫번째 탭 콘텐츠 부분 -->
+                        <div>
+                            <table class="course-list-table"
+                                summary="전체코스의 코스명, 시간, 홀, 인터넷요금, 할인요금, 카트피를 알수 있고, 예약신청을 할 수 있습니다">
+                                <caption>예약시간</caption>
+
+                                <!-- 2022/07/18  수정 -->
+                                <colgroup>
+                                    <col width="*">
+                                    <col width="20%">
+                                    <col width="15%">
+                                    <col width="15%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <!-- //2022/07/18  수정 -->
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">코스</th>
+                                        <th scope="col">시간</th>
+                                        <th scope="col">홀</th>
+                                        <!-- 2022/08/19 수정 -->
+                                        <th scope="col">정상가</th>
+                                        <!-- //2022/08/19 수정 -->
+                                        <th scope="col">인터넷가</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Lake</td>
+                                        <td>06:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Lake</td>
+                                        <td>06:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Mountain</td>
+                                        <td>06:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Lake</td>
+                                        <td>08:01</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Mountain</td>
+                                        <td>08:08</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Lake</td>
+                                        <td>08:22</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Mountain</td>
+                                        <td>08:22</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Lake</td>
+                                        <td>08:29</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Mountain</td>
+                                        <td>08:29</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Lake</td>
+                                        <td>08:50</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lake</td>
+                                        <td>12:13</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Lake</td>
+                                        <td>12:20</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Mountain</td>
+                                        <td>12:20</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Mountain</td>
+                                        <td>12:27</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Mountain</td>
+                                        <td>12:34</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Mountain</td>
+                                        <td>12:41</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Mountain</td>
+                                        <td>12:48</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Mountain</td>
+                                        <td>12:55</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Mountain</td>
+                                        <td>13:23</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Lake</td>
+                                        <td>13:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Mountain</td>
+                                        <td>13:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Lake</td>
+                                        <td>13:37</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Lake</td>
+                                        <td>13:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Lake</td>
+                                        <td>13:51</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //첫번째 탭 콘텐츠 부분 -->
+                        <!-- 두번째 탭 콘텐츠 부분 -->
+                        <div>
+                            <table class="course-list-table"
+                                summary="전체코스의 코스명, 시간, 홀, 인터넷요금, 할인요금, 카트피를 알수 있고, 예약신청을 할 수 있습니다">
+                                <caption>예약시간</caption>
+
+                                <!-- 2022/07/18  수정 -->
+                                <colgroup>
+                                    <col width="*">
+                                    <col width="20%">
+                                    <col width="15%">
+                                    <col width="15%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <!-- //2022/07/18  수정 -->
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">코스</th>
+                                        <th scope="col">시간</th>
+                                        <th scope="col">홀</th>
+                                        <!-- 2022/08/19 수정 -->
+                                        <th scope="col">정상가</th>
+                                        <!-- //2022/08/19 수정 -->
+                                        <th scope="col">인터넷가</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Mountain</td>
+                                        <td>06:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Mountain</td>
+                                        <td>08:08</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Mountain</td>
+                                        <td>08:22</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Mountain</td>
+                                        <td>08:29</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Mountain</td>
+                                        <td>12:20</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Mountain</td>
+                                        <td>12:27</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Mountain</td>
+                                        <td>12:34</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Mountain</td>
+                                        <td>12:41</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Mountain</td>
+                                        <td>12:48</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Mountain</td>
+                                        <td>12:55</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Mountain</td>
+                                        <td>13:23</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Mountain</td>
+                                        <td>13:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //두번째 탭 콘텐츠 부분 -->
+                        <!-- 세번째 탭 콘텐츠 부분 -->
+                        <div>
+                            <table class="course-list-table"
+                            summary="전체코스의 코스명, 시간, 홀, 인터넷요금, 할인요금, 카트피를 알수 있고, 예약신청을 할 수 있습니다">
+                            <caption>예약시간</caption>
+
+                            <!-- 2022/07/18  수정 -->
+                            <colgroup>
+                                <col width="*">
+                                <col width="20%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="20%">
+                                <col width="20%">
+                            </colgroup>
+                            <!-- //2022/07/18  수정 -->
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">코스</th>
+                                    <th scope="col">시간</th>
+                                    <th scope="col">홀</th>
+                                    <!-- 2022/08/19 수정 -->
+                                    <th scope="col">정상가</th>
+                                    <!-- //2022/08/19 수정 -->
+                                    <th scope="col">인터넷가</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Lake</td>
+                                        <td>06:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Lake</td>
+                                        <td>06:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">165,000</span></td>
+                                        <td><span class="red">145,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Lake</td>
+                                        <td>08:01</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Lake</td>
+                                        <td>08:22</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Lake</td>
+                                        <td>08:29</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Lake</td>
+                                        <td>08:50</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">175,000</span></td>
+                                        <td><span class="red">155,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Lake</td>
+                                        <td>12:13</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Lake</td>
+                                        <td>12:20</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Lake</td>
+                                        <td>13:30</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Lake</td>
+                                        <td>13:37</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lake</td>
+                                        <td>13:44</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Lake</td>
+                                        <td>13:51</td>
+                                        <td>18홀</td>
+                                        <td><span class="blue">180,000</span></td>
+                                        <td><span class="red">160,000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //세번째 탭 콘텐츠 부분 -->
+                    </div>
+                    <!-- //탭 콘텐츠 -->
+
+                </div>
+                <!-- //코스 리스트 -->
+
+            </article>
+            <!-- //예약시간 선택 -->
+
+            <!-- 예약변경 선택되면 나타나는 부분  -->
+
+            <!-- 예약정보 -->
+            <div class="res-info">
+                <dl>
+                    <dt class="res-icon user">신청자</dt>
+                    <dd>홍길동</dd>
+                </dl>
+                <dl>
+                    <dt class="res-icon date">예약일자</dt>
+                    <dd>2022-06-22(금)</dd>
+                </dl>
+                <dl>
+                    <dt class="res-icon course">코스/홀/시간</dt>
+                    <dd>Lake/18홀/06:30</dd>
+                </dl>
+            </div>
+            <!-- //예약정보 -->
+
+            <article class="res-price-info">
+                <dl>
+                    <!-- 2022/08/19 수정 -->
+                    <dt>정상가</dt>
+                    <!-- //2022/08/19 수정 -->
+                    <dd class="original-price">165,000원</dd>
+                </dl>
+                <dl>
+                    <dt>인터넷 회원가</dt>
+                    <dd class="members-price"><strong>145,000원</strong></dd>
+                </dl>
+            </article>
+
+            <div class="notice-res">
+                <p class="title brown">※ 알려 드립니다.</p>
+                <p>
+                    당 클럽에서는 TEE-OFF 시간을 준수하고 있습니다.
+                    원활한 경기진행을 위해 <span class="brown">30분전 내장, 10분전 라운드</span>를
+                    준비해 주시기 바랍니다.
+                </p>
+                <p>
+                    예약취소는 4일전 17:00 이전까지 취소가 가능합니다. 
+                    이후 취소는 위약금 및 패널티 부과 적용으로 예약실로 
+                    문의 바랍니다.<br>
+                    예약실 (1566-0162 또는 043-926-1000)
+                </p>
+            </div>
+
+            <!-- 정보수신동의 체크박스 -->
+            <div class="chk-res">   
+                <div class="chk-one">
+                    <div>
+                        <input type="checkbox" id="c-1" name="chk-one">
+                        <label for="c-1"><span></span>
+                           예약 시 유의 사항을 확인하였으며 부과금액 사항에 동의합니다.
+                        </label>
+                    </div>
+                </div>
+                <div class="chk-one">
+                    <div>
+                        <input type="checkbox" id="c-2" name="chk-one">
+                        <label for="c-2"><span></span>
+                            개인정보 제공에 동의합니다.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- //정보수신동의 체크박스 -->
+
+            <!-- 2022/07/18  수정 -->
+            <div class="bottom-btn">	
+                <button class="btn-1 mint" onclick="openLayer('popup-1')">예약 변경하기</button>
+                <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+            </div>
+            <!-- //2022/07/18  수정 -->
+            
+            <!-- //예약변경 선택되면 나타나는 부분  -->
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="padding:30px 20px 25px;">
+
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <!-- 2022/07/18  수정 -->
+    <!-- 예약변경완료 팝업 -->
+    <div id="popup-1" class="popup-bg">
+        <div class="common-popup">
+            <div class="scroll">
+            <!-- 내용이 길어지면 스크롤 생김 -->
+                <p style="text-align: center;">
+                    <span>2022-06-22</span>일자<br>
+                    <span>Lake</span>코스<br>
+                    <span>06:30</span>타임으로<br>
+                    변경 하시겠습니까?
+                    <br><br>
+                    변경이 확정되면 문자로<br>
+                    내역이 발송됩니다.
+                </p>
+            </div>
+            <div class="common-popup-btn">
+                <button type="button" class="white" onclick="closeLayer('popup-1')">취소</button>
+                <button type="button" class="mint">확인</button>
+            </div>
+        </div>
+    </div>
+    <!-- //예약변경완료 팝업 -->
+    <!-- //2022/07/18  수정 -->
+
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- 2022/08/19 수정2 -->
+    <script>
+
+        // 테이블 목록 클릭하면 예약정보로 스크롤 이동
+        $('.course-list-table tr').on('click', function(){
+
+            var arrLocation = $('.res-info').offset().top;
+            $('html').animate({scrollTop : ( arrLocation - 50 ) }, 400);
+
+        });
+
+    </script>
+    <!-- //2022/08/19 수정2 -->
+
+</body>
+
+</html>

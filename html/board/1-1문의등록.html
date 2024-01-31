@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-contact-2">
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>1:1 문의하기</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main contact-2">
+
+            <form action="">
+
+                <div style="padding:20px 20px 0;">
+                    <div class="form-area">
+                        <!-- 버튼영역 -->
+                        <a href="#" role="button" class="select-input">
+                            <div>
+                                <p>문의 유형을 선택하세요.</p>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- //버튼영역 -->
+                    </div>
+                    <div class="form-area">
+                        <input type="text" placeholder="제목을 입력해주세요.">
+                    </div>
+                    <div class="form-area">
+                        <div class="textarea-basic">
+                            <textarea placeholder="문의하실 내용을 입력해주세요."></textarea>
+                            <div class="num-letters">
+                                <span class="num-1">999</span>
+                                <span>/</span>
+                                <span class="num-2">1000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-info check">
+                    <dl>
+                        <dt>이름</dt>
+                        <dd>김태희</dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰번호</dt>
+                        <dd>010-1234-1234</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>test1234@gmail.com</dd>
+                    </dl>
+                </div>
+
+            </form>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- 하단메뉴 -->
+        <aside class="bottom-btn">
+            <button class="btn-2 white">취소</button>
+            <button class="btn-2 mint">등록</button>
+            <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+        </aside>
+        <!-- //하단메뉴 -->
+
+        <!-- 문의유형 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-select">
+                <section class="main">
+                    <p class="select-title">문의유형 선택</p>
+                    <div class="popup-scroll">
+                        <ul class="select">
+                            <li>액티비티</li>
+                            <li>예약</li>
+                            <li>푸드존</li>
+                            <li>기타</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //문의유형 팝업 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

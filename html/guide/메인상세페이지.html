@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-main-detail-info">
+        <!-- 헤더 -->
+        <header class="main-header active">
+            <button type="button" class="prev">
+            </button>
+            <h2>익스트림루지</h2>
+            <button type="button" class="shopping-basket">
+                <span>4</span>
+            </button>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main main-detail-info">
+
+            <!-- 스와이퍼이미지 -->
+            <div class="swiper main-swiper">
+                <div class="swiper-wrapper">
+                    <!-- 22/02/09 이미지경로수정 -->
+                    <div class="swiper-slide" style="background-image: url(../../assets/images/guide/test-img3.png);">1</div>
+                    <div class="swiper-slide" style="background-image: url(../../assets/images/guide/test-img3.png);">2</div>
+                    <div class="swiper-slide" style="background-image: url(../../assets/images/guide/test-img3.png);">3</div>
+                    <!-- //22/02/09 이미지경로수정 -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- //스와이퍼이미지 -->
+
+            <article class="main-detail-article">
+                <h3>익스트림루지</h3>
+                <span class="detail-text">자연터널을 가로 지르는 익스트림 루지</span>
+                <span class="terms">키 140cm이상 / 36개월 이상</span>
+                <!-- 22/02/14 수정 --> 
+                <span class="price-type">할인가</span>
+                <!-- //22/02/14 수정 --> 
+                <span class="price">13,000원</span>
+                <span class="original-price">정상가 15,000원</span>
+            </article>
+
+            <!-- 상세정보 리스트 -->
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">기본정보</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">위치안내</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <!-- 22/02/09 이미지경로수정 -->
+                        <img src="../../assets/images/guide/test-img3.png" width="100%" alt="익스트림루지지도">
+                        <!-- //22/02/09 이미지경로수정 -->
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">기본정보</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">기본정보</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">기본정보</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <h4 class="accordion-title">기본정보</h4>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+                    </div>
+                </div>
+            </div>
+            <!-- //상세정보 리스트 -->
+
+        </section>
+        <!-- //메인컨텐츠 -->
+        
+      <!-- footer -->
+      <footer class="main-footer">
+        <ul class="sns-area">
+          <li>
+            <a href="#" class="instagram" style="background-image: url(../../assets/images/main_insta_icon.png);">
+              <span class="blind">벨포레 인스타그램</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="blog" style="background-image: url(../../assets/images/main_blog_icon.png)">
+              <span class="blind">벨포레 블로그</span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="padding: 30px 20px 25px">
+          <!-- 2022/08/19 수정2 -->
+          <strong class="title">벨포레 고객센터 <span>1566 - 0162</span></strong>
+          <!-- //2022/08/19 수정2 -->
+
+          <ul class="terms-area">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li>
+              <a href="#">영상정보처리기기 운영관리방침</a>
+            </li>
+            <li>
+              <a href="#">이메일 무단수집거부</a>
+            </li>
+          </ul>
+
+          <address class="footer-address">
+            <p>
+              상호명 : (주)블랙스톤에듀팜리조트<br />
+              대표이사: 원성역<br />
+              주소 : 충청북도 증평군 도안면 벨포레길 346<br />
+              사업자번호 : 535-86-00475<br />
+              통신판매업 신고번호 : 제 2019충북증평00041 호
+            </p>
+          </address>
+
+          <small>
+            <!-- 2022/08/18 수정 -->
+            Copyright 2022. BLACK STONE BELLE FORET inc.<br />
+            all rights reserved.
+            <!-- //2022/08/18 수정 -->
+          </small>
+        </div>
+      </footer>
+      <!-- footer -->
+
+        <!-- 하단메뉴 -->
+        <aside class="bottom-btn">	
+            <button class="btn-1 mint">티켓 구매하기</button>
+        </aside>
+        <!-- //하단메뉴 -->
+
+        <!-- 티켓옵션 선택 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-full ticket-popup">
+                <header>
+                    <h2>티켓옵션 선택</h2>
+                    <button type="button"><span class="blind">닫기</span></button>
+                </header>
+                <section class="main">
+                    <form action="">
+                        <section class="border-section">
+                            <!-- 요일권선택 -->
+                            <div class="ticket-select drop-content">
+                                <div class="title">
+                                    <h3>요일권 선택</h3>
+                                    <button type="button" class="drop-btn"></button>
+                                </div>
+                                <div class="check">
+                                    <div class="set flex-s">
+                                        <div class="ob2">
+                                            <!-- 22/03/18 수정 -->
+                                            <input type="radio" id="r1" name="radio1" data-type="type-1">
+                                            <label for="r1"><span></span>주중</label>
+                                        </div>
+                                        <div class="ob2">
+                                            <input type="radio" id="r2" name="radio1" data-type="type-2">
+                                            <label for="r2"><span></span>주말</label>
+                                        </div>
+                                        <div class="ob2">
+                                            <input type="radio" id="r3" name="radio1" data-type="type-3">
+                                            <label for="r3"><span></span>주중/주말</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //요일권선택 -->
+                            <!-- 티켓선택 -->
+                            <!-- 주중선택영역 -->
+                            <div class="ticket-select drop-content" data-content="type-1">
+                                <div class="title">
+                                    <h3>티켓 선택</h3>
+                                    <button type="button" class="drop-btn"></button>
+                                </div>
+                                <div class="check">
+                                    <!-- 티켓-->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c1" name="checkbox1">
+                                            <label for="c1"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <!-- //티켓 -->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c2" name="checkbox1">
+                                            <label for="c2"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c3" name="checkbox1">
+                                            <label for="c3"><span></span>익스트림루지 동반</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <!-- <span class="original-price">정상가15,000원</span> -->
+                                            <span class="price">3,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //주중선택영역 -->
+                            <!-- 주말선택영역 -->
+                            <div class="ticket-select drop-content" data-content="type-2">
+                                <div class="title">
+                                    <h3>티켓 선택2</h3>
+                                    <button type="button" class="drop-btn"></button>
+                                </div>
+                                <div class="check">
+                                    <!-- 티켓-->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c4" name="checkbox1">
+                                            <label for="c4"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <!-- //티켓 -->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c5" name="checkbox1">
+                                            <label for="c5"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c6" name="checkbox1">
+                                            <label for="c6"><span></span>익스트림루지 동반</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <!-- <span class="original-price">정상가15,000원</span> -->
+                                            <span class="price">3,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //주말선택영역 -->
+                            <!-- 주중/주말선택영역 -->
+                            <div class="ticket-select drop-content" data-content="type-3">
+                                <div class="title">
+                                    <h3>티켓 선택3</h3>
+                                    <button type="button" class="drop-btn"></button>
+                                </div>
+                                <div class="check">
+                                    <!-- 티켓-->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c7" name="checkbox1">
+                                            <label for="c7"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <!-- //티켓 -->
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c8" name="checkbox1">
+                                            <label for="c8"><span></span>익스트림루지 1회</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <span class="original-price">정상가15,000원</span>
+                                            <span class="price">할인가13,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                    <div class="set">
+                                        <div class="ob1">
+                                            <input type="checkbox" id="c9" name="checkbox1">
+                                            <label for="c9"><span></span>익스트림루지 동반</label>
+                                        </div>
+                                        <!-- 22/02/14 수정 -->
+                                        <div style="margin-left:28px">
+                                            <!-- <span class="original-price">정상가15,000원</span> -->
+                                            <span class="price">3,000원</span>
+                                            <span class="valid">유효기간: 2022.01.20 ~ 2022.02.28</span>
+                                        </div>
+                                        <!-- //22/02/14 수정 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //주중/주말선택영역 -->
+                            <!-- //22/03/18 수정 -->
+                            <!-- //티켓선택 -->
+                            <!-- 티켓정보 -->
+                            <!-- 티켓 -->
+                            <div class="ticket-info">
+                                <div class="flex-sb">
+                                    <h5>[주중] 익스트림루지 2회</h5>
+                                    <button type="button" class="del"></button>
+                                </div>
+                                <div class="flex-sb">
+                                    <div class="num-sel">
+                                        <input type="button" class="num-btn" data-type="minus"></input>
+                                        <span class="num-result">2</span>
+                                        <input type="button" class="num-btn" data-type="plus"></input>
+                                    </div>
+                                    <div>
+                                        <span class="original-price">정상가 48,000원</span>
+                                        <span class="price">할인가42,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //티켓 -->
+                            <div class="ticket-info">
+                                <div class="flex-sb">
+                                    <h5>[주중] 익스트림루지</h5>
+                                    <button type="button" class="del"></button>
+                                </div>
+                                <div class="flex-sb">
+                                    <div class="num-sel">
+                                        <input type="button" class="num-btn" data-type="minus"></input>
+                                        <span class="num-result">2</span>
+                                        <input type="button" class="num-btn" data-type="plus"></input>
+                                    </div>
+                                    <div>
+                                        <!-- <span class="original-price">정상가 48,000원</span> -->
+                                        <span class="price">3,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //티켓정보 -->
+                        </section>
+                        <!-- 티켓금액 -->
+                        <div class="ticket-price">
+                            <div class="flex-sb">
+                                <span>티켓수량</span>
+                                <strong>총 <em>4</em>매</strong>
+                            </div>
+                            <div class="flex-sb">
+                                <span>티켓금액</span>
+                                <strong>54,000원</strong>
+                            </div>
+                            <div class="flex-sb">
+                                <span>온라인 할인</span>
+                                <strong>-6,000원</strong>
+                            </div>
+                            <div class="flex-sb all">
+                                <span>총 티켓금액</span>
+                                <strong>48,000원</strong>
+                            </div>
+                        </div>
+                        <!-- //티켓금액 -->
+                        <!-- 하단메뉴 -->
+                        <aside class="bottom-btn">	
+                            <button class="btn-2 white">장바구니 담기</button>
+                            <button class="btn-2 mint">구매히기</button>
+                        </aside>
+                        <!-- //하단메뉴 --> 
+                    </form>
+                </section>
+            </div>
+        </div>
+        <!-- //티켓옵션 선택 팝업 -->
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+
+        //스크롤되면 바뀌는 sub-header
+        $(window).on('scroll',function(){
+
+            var scrollTopValue = $(window).scrollTop();
+
+            if( scrollTopValue > 50 ){ 
+                $('.sub-header').removeClass('active');
+                }else{ 
+                    
+                    $('.sub-header').addClass('active'); 
+                } 
+        });
+
+        //swiper
+        var swiper = new Swiper(".main-swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            //22/02/10 스와이퍼 옵션 추가
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        //accordion list 제목 클릭되면 scrollTop 이동
+        $('.accordion button').on('click', function(e){
+            var target = $(e.target);
+            var offset = target.offset();
+            var winH = $(window).height();
+            $('html, body').animate({scrollTop : (offset.top - winH/3)}, 200);
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-pay-condo">
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>결제하기</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main pay-condo">
+
+            <form action="">
+
+                <!-- 주문자정보 -->
+                <div class="pay-info drop-content">
+                    <div class="title">
+                        <h3>주문자 정보</h3>
+                        <div class="data-area">
+                            <span class="name">김태희희희희희</span>
+                            <span class="phone">010-1234-1234</span>
+                        </div>
+                        <button type="button" class="drop-btn"></button>
+                    </div>
+                    <div class="user-info check">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김태희</dd>
+                        </dl>
+                        <dl>
+                            <dt>회원등급</dt>
+                            <dd>콘도그린회원</dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰번호</dt>
+                            <dd>010-1234-1234</dd>
+                        </dl>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>test1234@gmail.com</dd>
+                        </dl>
+                    </div>
+                    <div class="user-info check">
+                        <dl>
+                            <dt>실사용자</dt>
+                            <dd>홍길동</dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰번호</dt>
+                            <dd>010-1234-5678</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- //주문자정보 -->
+
+                <!-- 콘도예약 -->
+                <div class="pay-info drop-content">
+                    <div class="title">
+                        <h3>콘도 예약</h3>
+                        <button type="button" class="drop-btn"></button>
+                    </div>
+                    <div class="user-info check">
+                        <dl>
+                            <dt>예약번호</dt>
+                            <dd>221424564</dd>
+                        </dl>
+                        <dl>
+                            <dt>예약일자</dt>
+                            <dd>2022년 08월 18일(목)</dd>
+                        </dl>
+                    </div>
+                    <div class="user-info check">
+                        <dl>
+                            <dt>일정</dt>
+                            <div>
+                                <dd>입실일 : 2022년 08월 31일(수)</dd>
+                                <dd>퇴실일 : 2022년 09월 02일(금)</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="user-info check">
+                        <dl>
+                            <dt>숙박정보</dt>
+                            <div>
+                                <dd>객실타입 : 펫포레 51평</dd>
+                                <dd>숙박기간 : 2박 3일</dd>
+                                <dd>숙박인원 : 6명(+1명)</dd>
+                                <dd>반려견 : 3마리(+1마리)</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <!-- //콘도예약 -->
+
+                <!-- 일자별 상세요금 -->
+                <div class="pay-info drop-content">
+                    <div class="title">
+                        <h3>일자별 상세요금</h3>
+                        <button type="button" class="drop-btn"></button>
+                    </div>
+                    <div class="user-info check">
+                        <article class="res-price-info room" style="background-color: transparent; padding:0;">
+                            <div class="ticket-price">
+                                <div class="flex-sb">
+                                    <span>8월 17일(목)</span>
+                                    <strong>143,000원</strong>
+                                </div>
+                                <div class="flex-sb">
+                                    <span>8월 18일(금)</span>
+                                    <strong>160,000원</strong>
+                                </div>
+                                <div class="flex-sb">
+                                    <span>추가인원</span>
+                                    <strong>1명</strong>
+                                </div>
+                                <div class="flex-sb">
+                                    <span>추가반려견</span>
+                                    <strong>1마리</strong>
+                                </div>
+                                <div class="flex-sb all">
+                                    <span>결제금액</span>
+                                    <strong>306,000원</strong>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- //일자별 상세요금 -->
+
+                <!-- 결제수단 -->
+                <div class="pay-info drop-content">
+                    <div class="title">
+                        <h3>결제수단</h3>
+                        <button type="button" class="drop-btn"></button>
+                    </div>
+
+                    <div class="check">
+                        <div class="pay-mtd">
+                            <input type="radio" id="r2" name="pay-type">
+                            <label for="r2"><span></span>일반카드결제</label>
+                        </div>
+                        <div class="pay-mtd n-pay">
+                            <input type="radio" id="r3" name="pay-type">
+                            <label for="r3"><span></span></label>
+                        </div>
+                        <div class="pay-mtd k-pay">
+                            <input type="radio" id="r4" name="pay-type">
+                            <label for="r4"><span></span></label>
+                        </div>
+                        <div class="line-chk">
+                            <input type="checkbox" id="c1">
+                            <label for="c1"><span></span>구매내용을 확인하였으며, 정보제공 등에 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- //결제수단 -->
+
+                <div class="bottom-btn">	
+                    <button class="btn-1 mint">결제하기</button>
+                    <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+                </div>
+
+            </form>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <ul class="sns-area">
+            <li>
+                <a href="#" class="instagram" style="background-image: url(../../assets/images/main_insta_icon.png);">
+                <span class="blind">벨포레 인스타그램</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="blog" style="background-image: url(../../assets/images/main_blog_icon.png)">
+                <span class="blind">벨포레 블로그</span>
+                </a>
+            </li>
+            </ul>
+
+            <div style="padding: 30px 20px 25px">
+
+            <strong class="title">벨포레 고객센터 <span>1566 - 0162</span></strong>
+
+            <ul class="terms-area">
+                <li>
+                <a href="#">이용약관</a>
+                </li>
+                <li>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li>
+                <a href="#">영상정보처리기기 운영관리방침</a>
+                </li>
+                <li>
+                <a href="#">이메일 무단수집거부</a>
+                </li>
+            </ul>
+
+            <address class="footer-address">
+                <p>
+                상호명 : (주)블랙스톤에듀팜리조트<br />
+                대표이사: 원성역<br />
+                주소 : 충청북도 증평군 도안면 벨포레길 346<br />
+                사업자번호 : 535-86-00475<br />
+                통신판매업 신고번호 : 제 2019충북증평00041 호
+                </p>
+            </address>
+
+            <small>
+                Copyright 2022. BLACK STONE BELLE FORET inc.<br />
+                all rights reserved.
+            </small>
+            </div>
+        </footer>
+        <!-- footer -->
+ 
+        <!-- 결제완료팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-full">
+
+                <header>
+                    <h2>결제완료</h2>
+                    <button type="button"><span class="blind">닫기</span></button>
+                </header>
+
+                <section class="main pay-done" style="padding-bottom:70px;">
+                    <div class="top-con" style="padding:86px 20px 0">
+                        <div class="deco-img"></div>
+                        <p>결제가 완료되었습니다.</p>
+                        <div class="pay-list-top">
+                            <p class="num">주문번호 123456789</p>
+                            <dl>
+                                <dt style="width:15%;">결제일</dt>
+                                <dd>2022.01.26.12:12</dd>
+                            </dl>
+                        </div>            
+                    </div>
+
+                    <!-- 결제정보 -->
+                    <div class="pay-info drop-content">
+
+                        <div class="title">
+                            <h3>결제정보</h3>
+                            <button type="button" class="drop-btn"></button>
+                        </div>
+
+                        <div class="check">
+                            <div class="user-info room">
+                                <dl>
+                                    <dt>예약번호</dt>
+                                    <div>
+                                        <div class="flex-sb">
+                                            <dd>221436197</dd>
+                                            <dd></dd>
+                                        </div>
+                                    </div>    
+                                </dl>
+                                <dl>
+                                    <dt>객실타입</dt>
+                                    <div>
+                                        <div class="flex-sb">
+                                            <dd>펫포레 51평</dd>
+                                            <dd></dd>
+                                        </div>
+                                    </div>    
+                                </dl>
+                                <dl>
+                                    <dt>결제상세</dt>
+                                    <div>
+                                        <div class="flex-sb">
+                                            <dd>8월 17일(목)</dd>
+                                            <dd>143,000원</dd>
+                                        </div>
+                                        <div class="flex-sb">
+                                            <dd>8월 18일(금)</dd>
+                                            <dd>160,000원</dd>
+                                        </div>
+                                        <div class="flex-sb">
+                                            <dd>추가인원</dd>
+                                            <dd>1명</dd>
+                                        </div>
+                                        <div class="flex-sb">
+                                            <dd>추가반려견</dd>
+                                            <dd>1마리</dd>
+                                        </div>
+                                    </div>    
+                                </dl>
+                            </div>
+                            <div class="user-info room">
+                                <dl>
+                                    <dt>결제금액</dt>
+                                    <div>
+                                        <div class="flex-sb">
+                                            <dd></dd>
+                                            <dd>309,000원</dd>
+                                        </div>
+                                    </div>    
+                                </dl>
+                                <dl class="btn-dl">
+                                    <dt>결제상태</dt>
+                                    <div>
+                                        <div class="flex-sb">
+                                            <dd>정상</dd>
+                                            <dd>
+                                                <button type="button" class="info-btn mini-3 white">결제취소</button>
+                                                <!-- 활성화 class="white" / 비활성화 class="grey" -->
+                                            </dd>
+                                        </div>
+                                    </div>    
+                                </dl>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- //결제정보 -->
+
+                </section>
+
+                <!-- 하단메뉴 -->
+                <aside class="bottom-btn">	
+                    <button class="btn-1 mint">콘도예약확인 바로가기</button>
+                </aside>
+                <!-- //하단메뉴 -->
+            </div>
+        </div>
+        <!-- //결제완료팝업 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

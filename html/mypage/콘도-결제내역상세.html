@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-pay-detail-list">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>결제내역상세</h2>
+            <button type="button" class="filter-search"></button>
+            <button type="button" class="shopping-basket">
+                <span>4</span>
+            </button>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main pay-detail-list">
+
+            <div class="pay-list-top">
+                <p class="num">주문번호 123456789</p>
+                <dl>
+                    <dt style="width:15%;">결제일</dt>
+                    <dd>2022.01.26</dd>
+                </dl>
+            </div>
+
+            <!-- 결제정보 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>결제정보</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="check">
+
+                    <div class="user-info room">
+                        <dl>
+                            <dt>예약번호</dt>
+                            <div>
+                                <div class="flex-sb">
+                                    <dd>221436197</dd>
+                                    <dd></dd>
+                                </div>
+                            </div>    
+                        </dl>
+                        <dl>
+                            <dt>객실타입</dt>
+                            <div>
+                                <div class="flex-sb">
+                                    <dd>펫포레 51평</dd>
+                                    <dd></dd>
+                                </div>
+                            </div>    
+                        </dl>
+                        <dl>
+                            <dt>결제상세</dt>
+                            <div>
+                                <div class="flex-sb">
+                                    <dd>8월 17일(목)</dd>
+                                    <dd>143,000원</dd>
+                                </div>
+                                <div class="flex-sb">
+                                    <dd>8월 18일(금)</dd>
+                                    <dd>160,000원</dd>
+                                </div>
+                                <div class="flex-sb">
+                                    <dd>추가인원</dd>
+                                    <dd>30,000원</dd>
+                                </div>
+                                <div class="flex-sb">
+                                    <dd>추가반려견</dd>
+                                    <dd>30,000원</dd>
+                                </div>
+                            </div>    
+                        </dl>
+                    </div>
+                    <div class="user-info room">
+                        <dl>
+                            <dt>결제금액</dt>
+                            <div>
+                                <div class="flex-sb">
+                                    <dd></dd>
+                                    <dd>309,000원</dd>
+                                </div>
+                            </div>    
+                        </dl>
+                        <dl class="btn-dl">
+                            <dt>결제상태</dt>
+                            <div>
+                                <div class="flex-sb">
+                                    <!-- 2022/09/21 수정 -->
+                                    <!-- 정상 일때 나오는 부분-->
+
+                                    <!-- <dd>정상</dd> -->
+
+                                    <!-- //정상 일때 나오는 부분 -->
+
+                                    <!-- 부분취소 일때 나오는 부분-->
+
+                                    <dd>
+                                        <button type="button" class="text-line">부분취소</button>  
+                                    </dd>
+
+                                    <!-- //부분취소 일때 나오는 부분 -->
+                                    <!-- //2022/09/21 수정 -->
+                                    <dd>
+                                        <button type="button" class="info-btn mini-3 white">결제취소</button>
+                                        <!-- 활성화 class="white" / 비활성화 class="grey" -->
+                                    </dd>
+                                </div>
+                            </div>    
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //결제정보 -->
+
+            <!-- 주문자정보 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>주문자 정보</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="user-info check">
+                    <dl>
+                        <dt>이름</dt>
+                        <dd>김태희</dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰번호</dt>
+                        <dd>010-1234-1234</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>test1234@gmail.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //주문자정보 -->
+            
+            <!-- 결제수단 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>결제수단</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="user-info check">
+                    <dl>
+                        <dt>카드결제</dt>
+                        <dd>54,000원</dd>
+                    </dl>
+                    <dl>
+                        <dt>결제카드</dt>
+                        <dd>신한(0000********0000)</dd>
+                    </dl>
+                    <dl>
+                        <dt>할부</dt>
+                        <dd>일시불</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //결제수단 -->
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- 하단안내 -->
+        <div class="footer-guide">
+            <!-- 2022/09/21 수정 -->
+            <p>
+                <strong>1. 예약취소시 위약금 발생 안내</strong>
+                <br>                
+                ※ 예약일 제외 일주일전까지 취소 및 변경 가능<br>
+                6일전 취소 30%,<br>
+                5일전 취소 40%,<br> 
+                4일전 취소 50%,<br> 
+                3일전 취소 70%,<br>
+                2일전 취소 80%,<br> 
+                1일전 취소 90%,<br> 
+                당일취소 100%  위약금 발생
+            </p>
+            <!-- //2022/09/21 수정 -->
+            <p>
+                <strong>2. 카드취소/환불</strong> 
+                <br>
+                3~7영업일내 취소 또는 환불되며, 금액환불은 카드사에 따라 취소일로 부터 최대 10일까지 소요될 수 있습니다. 취소 및 환불이 이루어 지지 않을 경우, 카드사에 문의하여 주시기 바랍니다.
+            </p>
+            <!-- 22/02/23 수정 -->
+        </div>
+        <!-- //하단안내 -->
+
+        <!-- 하단메뉴 -->
+        <div class="bottom-btn">	
+            <button class="btn-1 mint">콘도결제목록</button>
+        </div>
+        <!-- //하단메뉴 -->
+
+        <!-- 2022/09/21 수정 -->
+
+        <!-- 위약금발생취소-온라인회원 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-select-full">
+                <section class="main">
+                    <header>
+                        <h4>결제취소</h4>
+                        <button type="button"><span class="blind">닫기</span></button>
+                    </header>
+                    <div class="popup-scroll">
+                        <div class="user-info room">
+                            <dl>
+                                <dt>현재일자</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 15일(수) 12시 22분</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>입실일</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(금)</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd class="main-c">숙박금액 80%</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실타입</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>펫포레</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제상세</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>51평</dd>
+                                        <dd></dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(목)</dd>
+                                        <dd>143,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 18일(금)</dd>
+                                        <dd>160,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가인원</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가반려견</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <div class="user-info room">
+                            <dl>
+                                <dt>결제금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>309,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실요금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>363,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd class="red-c">-242,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제취소금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>120,600원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <p class="fin-point-text" style="font-size:1.3rem;">지금 예약 취소시 위약금을 제외한 금액이 취소됩니다.</p>
+                        <div class="chk-res">   
+                            <div class="chk-one">
+                                <div>
+                                    <input type="checkbox" id="c-1" name="chk-one">
+                                    <label for="c-1"><span></span>
+                                        위약금 내역을 확인 하였으며, 의의가 없음을 확인합니다.
+                                    </label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="bottom-btn">	
+                            <button class="btn-2 white">닫기</button>
+                            <button class="btn-2 mint">결제취소하기</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //위약금발생취소-온라인회원 팝업 -->
+
+        <!-- 위약금발생취소-콘도회원 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:block;">
+            <div class="popup-content-select-full">
+                <section class="main">
+                    <header>
+                        <h4>결제취소</h4>
+                        <button type="button"><span class="blind">닫기</span></button>
+                    </header>
+                    <div class="popup-scroll">
+                        <div class="user-info room">
+                            <dl>
+                                <dt>현재일자</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 15일(수) 12시 22분</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>입실일</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(금)</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd class="main-c">숙박금액 80%</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실타입</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>펫포레</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제상세</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>51평</dd>
+                                        <dd></dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(목)</dd>
+                                        <dd>143,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 18일(금)</dd>
+                                        <dd>160,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가인원</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가반려견</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <div class="user-info room">
+                            <dl>
+                                <dt>결제금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>309,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실요금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>363,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd class="red-c">-242,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제취소금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>120,600원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <p class="fin-point-text" style="font-size:1.3rem; color:#333;">
+                            홍길동님의 현재 벌점은 <span class="main-c">4점</span> 입니다.<br>
+                            벌점 <span class="main-c">7점</span> 이상은 <span class="red-c">골프/콘도</span> 예약을 할 수 없습니다.<br>
+                            (한달에 1점씩 감소합니다)
+                        </p>
+                        <div class="chk-res">   
+                            <div class="chk-one">
+                                <div>
+                                    <input type="checkbox" id="c-2" name="chk-one">
+                                    <label for="c-2"><span></span>
+                                        위약금/벌점 내역을 확인 하였으며, 의의가 없음을 확인합니다.
+                                    </label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="bottom-btn">	
+                            <button class="btn-3 white">닫기</button>
+                            <button class="btn-3 mint">벌점받기</button>
+                            <button class="btn-3 mint">결제취소하기</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //위약금발생취소-콘도회원 팝업 -->
+
+        <!-- 위약금발생취소-콘도회원 벌점받기 팝업-->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-select-full">
+                <section class="main">
+                    <header>
+                        <h4>결제취소</h4>
+                        <button type="button"><span class="blind">닫기</span></button>
+                    </header>
+                    <div class="popup-scroll">
+                        <div class="user-info room">
+                            <dl>
+                                <dt>현재일자</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 15일(수) 12시 22분</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>입실일</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(금)</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd class="main-c">숙박금액 80%</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실타입</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>펫포레</dd>
+                                        <dd></dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제상세</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd>51평</dd>
+                                        <dd></dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 17일(목)</dd>
+                                        <dd>143,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>8월 18일(금)</dd>
+                                        <dd>160,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가인원</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                    <div class="flex-sb">
+                                        <dd>추가반려견</dd>
+                                        <dd>30,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <div class="user-info room">
+                            <dl>
+                                <dt>결제금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>309,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>객실요금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>363,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>위약금</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd class="red-c">-242,000원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                            <dl>
+                                <dt>결제취소금액</dt>
+                                <div>
+                                    <div class="flex-sb">
+                                        <dd></dd>
+                                        <dd>120,600원</dd>
+                                    </div>
+                                </div>    
+                            </dl>
+                        </div>
+                        <p class="fin-point-text" style="font-size:1.3rem; color:#333;">
+                            부분취소 진행완료<br>
+                            벌점 4점 부과완료
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //위약금발생취소-콘도회원 벌점받기 팝업 -->
+
+        <!-- //2022/09/21 수정 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

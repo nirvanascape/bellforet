@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-new-password">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>비밀번호 찾기</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main new-password">
+
+            <p class="form-title">
+                새로운 비밀번호를<br>
+                입력해주세요.
+            </p>
+            <p class="form-detail">
+                띄어쓰기 없는 영문 소문자,숫자,특수문자<br>
+                8~13자를 입력해주세요.
+            </p>
+
+            <form action="">
+                <div class="form-area">
+                <!-- 경고창 활성화 될 때 class="warning" 추가 -->
+                    <div class="password" style="position:relative;">
+                        <input type="password" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요." />
+                        <button type="button" class="blind-eyes"></button>
+                    </div>
+                    <p class="warning-text">비밀번호를 입력해주세요.</p>
+                </div>
+                <div class="form-area warning">
+                <!-- 경고창 활성화 될 때 class="warning" 추가 -->
+                    <div class="password" style="position:relative;">
+                        <input type="password" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요." />
+                        <button type="button" class="blind-eyes"></button>
+                    </div>
+                    <p class="warning-text">비밀번호와 비밀번호 확인이 일치하지 않습니다. 다시 확인하여 입력해 주세요.</p>
+                </div>
+            </form>
+            <button type="button" class="mint" style="margin-top:40px;">확인</button>
+            <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

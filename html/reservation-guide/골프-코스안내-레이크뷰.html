@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-golf-course-guide">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>코스안내</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main golf-course-guide">
+
+            <div class="reservation-visual" style="background-image: url(../../assets/images/course-guide/golf/sub_golfinfo_img.png)">
+                <h2>코스안내</h2>
+                <p>
+                    블랙스톤의 명성 그대로!<br>
+                    아름다운 숲속의 벨포레 골프장을 소개합니다
+                </p>
+            </div>
+
+            <div style="padding:0 20px;">
+                
+                <!-- 페이지이동 리스트 -->
+                <div class="res-page-list drop-content-reverse">
+
+                    <a href="#" role="button" class="title drop-btn">
+                        <h3>LAKE VIEW</h3>
+                        <span></span>
+                    </a>
+                    <ul class="check page-list">
+                        <li>
+                            <a href="#">골프메인</a>
+                        </li>
+                        <li>
+                            <a href="#">골프예약</a>
+                        </li>
+                        <li>
+                            <a href="#">골프예약 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">MOUNTAIN VIEW</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">LAKE VIEW</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <!-- //페이지이동 리스트 -->
+    
+                <div class="sub-main-text">
+    
+                    <h3 class="sub-main-text-title">LAKE VIEW</h3>
+                    <p>
+                        아름다운 호수를 거닐며 수려한 경관을<br>
+                        즐길 수 있는 코스
+                    </p>
+    
+                </div>
+                        
+            </div>
+
+            <!-- 홀 리스트 탭 메뉴-->
+            <div class="tab">
+
+                <!-- 탭 리스트 -->
+                <div class="hole-list">
+                    <div class="swiper-container mySwiper1">
+                        <ul class="swiper-wrapper tab-menu">
+                            <li class="swiper-slide active">1홀</li>
+                            <li class="swiper-slide">2홀</li>
+                            <li class="swiper-slide">3홀</li>
+                            <li class="swiper-slide">4홀</li>
+                            <li class="swiper-slide">5홀</li>
+                            <li class="swiper-slide">6홀</li>
+                            <li class="swiper-slide">7홀</li>
+                            <li class="swiper-slide">8홀</li>
+                            <li class="swiper-slide">9홀</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //탭 리스트 -->
+                
+                <!-- 탭 콘텐츠 -->
+                <div class="tab-content">
+    
+                    <!-- 1홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg01_01_img.png" alt="1홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg01_02_img.png" alt="1홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg01_03_img.png" alt="1홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+    
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">1홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        티샷에 신중을 기해야하는 파5홀.<br>
+                                        장타자는 페어웨이 우측방향으로 짧게 공략하는 것이 좋다.
+                                        3온 공략이 관건.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        <!-- 2022/08/18 수정 -->
+                                        그린의 우측방향은 안전하다. 왼쪽공간은 많지 않으므로
+                                        <!-- //2022/08/18 수정 -->
+                                        훅샷을 조심해야 한다. 라이는 무난한 편이니 그린온에
+                                        집중하자
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>5</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>2</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>524</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>497</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>468</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>459</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole01_01_img.png" alt="1홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole01_02_img.png" alt="1홀 좌표" width="100%">
+                                </div>
+
+                            </div>
+    
+                            <div class="hole-detail video ">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/f46532b5-8a32-4023-8fdf-d45fd9572583.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                    </div>
+                    <!-- //1홀 탭 콘텐츠 부분 -->
+    
+                    <!-- 2홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg02_01_img.png" alt="2홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg02_02_img.png" alt="2홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg02_03_img.png" alt="2홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">2홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        원남호의 절경이 보이는 티잉그라운드에서 잠시 경치를 감상해보자.
+                                        멀리 보이는 그린 우측 끝 방향으로 티샷을 보내면 성공
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        세로로 긴 그린으로 우측 공간은 여유가 있는 편이나, 왼쪽은 위험하다.
+                                        그린 중앙에 볼이 있다면 핀 위치에 상관없이 라이는 고른 편이니 투퍼트로 충분히 마무리 할 수 있는 홀이다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>6</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>325</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>312</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>262</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>250</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole02_01_img.png" alt="2홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole02_02_img.png" alt="2홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/e1e4dfa2-75ea-4fdd-9721-18dc11a2fdb2.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //2홀 탭 콘텐츠 부분 -->
+
+                    <!-- 3홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg03_01_img.png" alt="3홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg03_02_img.png" alt="3홀 전경 이미지2">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">3홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        내리막 파3홀. 훅샷을 조심해야 한다.<br>
+                                        그린 앞의 병행워터헤저드를 조심해야 한다.
+                                        거리는 짧지않게 여유있는 클럽선택을 하는 것이 좋다.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        우측으로 비스듬히 굴곡진 그린으로 핀보다 길게 그린온 할 경우 내리막 라이를 공략해야하므로, 핀보다 짧게 혹은 핀 왼쪽으로 볼이 위치해 있다면 공략이 쉬워지는 그린이다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>3</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>9</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>128</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>128</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>115</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>115</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole03_01_img.png" alt="3홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole03_02_img.png" alt="3홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/b4cb2a76-ad25-49f7-a067-41976eb24126.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //3홀 탭 콘텐츠 부분 -->
+
+                    <!-- 4홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg04_01_img.png" alt="4홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg04_02_img.png" alt="4홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg04_03_img.png" alt="4홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">4홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        좌 도그렉 파4홀. IP지점 근처에 티잉그라운드에서는 보이지 않는 워터헤저드가 있으니, 장타자는 클럽 선택에 신중을 기해야 하는 홀.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        그린 뒷벙커의 왼쪽방향이 그린의 중앙이다.<br>
+                                        그린은 약간 왼쪽에서 오른쪽으로 흐르는 경향이 있고, 오른쪽은 공간이 많이 없는 편이다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>3</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>365</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>340</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>306</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>286</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole04_01_img.png" alt="4홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole04_02_img.png" alt="4홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/2479aae5-8aa6-4c85-98c5-5aa1f592f9b5.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //4홀 탭 콘텐츠 부분 -->
+
+                    <!-- 5홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg05_01_img.png" alt="5홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg05_02_img.png" alt="5홀 전경 이미지2">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">5홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        약간 오르막이 있는 파3홀.<br>
+                                        슬라이스 홀이므로, 티샷시 방향 설정에 유의하자.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        앞핀과 중핀은 제거리로 공략하고, 뒷핀일 경우 핀 왼쪽방향으로 거리를 여유있게 클럽선택을 하는 것이 좋다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>3</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>148</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>138</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>120</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>100</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole05_01_img.png" alt="5홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole05_02_img.png" alt="5홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/13538853-4418-4bc1-a8cc-e3bf4ce25fca.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //5홀 탭 콘텐츠 부분 --> 
+                    
+                    <!-- 6홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg06_01_img.png" alt="6홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg06_02_img.png" alt="6홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg06_03_img.png" alt="6홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">6홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        IP지점에서 티잉그라운드에서는 보이지 않는 병행워터헤저드가 있으니, 장타자는 클럽선택에 신중을 기해야하는 홀.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        좁고 긴 그린이나 라이는 비교적 평탄한 그린, 샷의 방향에 집중해 공략하는 것이 포인트.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>8</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>320</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>306</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>295</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>286</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole06_01_img.png" alt="6홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole06_02_img.png" alt="6홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/d1f72af4-952c-4836-8d30-36ebc9f56cfe.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //6홀 탭 콘텐츠 부분 -->             
+                    
+                    <!-- 7홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg07_01_img.png" alt="7홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg07_02_img.png" alt="7홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg07_03_img.png" alt="7홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">7홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        원시림이 느껴지는 숲속 느낌의 파4홀.<br>
+                                        멀리 보이는 산 정상 방향으로 공략하는 것이 좋다.
+                                        슬라이스는 금물.
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        그린 주변의 헤저드는 조심해야한다.<br>
+                                        그린의 왼쪽 끝 방향으로 제거리를 공략한다면 그린을 놓치더라도 크게 어려움이 없다.                                        
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>7</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>334</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>329</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>299</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>279</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole07_01_img.png" alt="7홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole07_02_img.png" alt="7홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/3af4c078-e90d-4e71-9129-09f5b256e1f3.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //7홀 탭 콘텐츠 부분 -->        
+                    
+                    <!-- 8홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg08_01_img.png" alt="8홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg08_02_img.png" alt="8홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg08_03_img.png" alt="8홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">8홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        LAKE VIEW 코스의 핸디캡 1번 파5홀.<br>
+                                        티샷은 무난한 편이나 이후에 욕심을 내어서는 안된다.침착하게 3온 공략을 하는 것이 좋다. 
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        왼쪽에서 오른쪽으로 흐르는 경향이 있는 2단그린으로, 핀 왼쪽방향으로 공략하는 것이 좋다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>5</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>1</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>540</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>518</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>488</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>410</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole08_01_img.png" alt="8홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole08_02_img.png" alt="8홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/e8b6bd01-832a-4bc4-9c0f-c318c6601f7b.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //8홀 탭 콘텐츠 부분 -->           
+                    
+                    <!-- 9홀 탭 콘텐츠 부분 -->
+                    <div>
+                        <!-- 이미지 스와이프 -->
+                        <div class="hole-img-swiper">
+    
+                            <div class="swiper-container mySwiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg09_01_img.png" alt="9홀 전경 이미지1">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg09_02_img.png" alt="9홀 전경 이미지2">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="../../assets/images/course-guide/golf/sub_lvImg09_03_img.png" alt="9홀 전경 이미지3">
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div> 
+                        </div>
+                        <!-- //이미지 스와이프 -->    
+                        
+                        <article class="hole-detail-box">
+    
+                            <h3 class="sub-main-text-title">9홀 코스 상세정보</h3>
+    
+                            <div style="padding:0 20px;">
+                                <div class="hole-detail">
+                                    <h4>필드공략법</h4>
+                                    <p>
+                                        콘도미니엄과 벨포레 목장이 보이는 시원한 전망의 파4홀.
+                                        우측 언덕 정상 부근의 소나무 군락을 보고 공략하면 좋다.
+                                        왼쪽 방향은 IP지점의 바위로 인해 세컨샷이 어려울 수 있으니 훅샷을 조심한다면 무난한 공략을 할 수 있다.  
+
+                                    </p>
+                                </div>
+                                
+                                <div class="hole-detail">
+                                    <h4>그린공략법</h4>
+                                    <p>
+                                        그린의 중앙과 오른쪽 방향은 공간이 있어서 안전하다.
+                                        왼쪽 벙커는 조심하자.벙커탈출이 꽤 까다로운 홀이다.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid-text">
+                                    <div class="item">
+                                        <strong>4</strong>
+                                        <strong>Par</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>5</strong>
+                                        <strong>HDCP</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>312</strong>
+                                        <strong>Blue</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>287</strong>
+                                        <strong>White</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>277</strong>
+                                        <strong>Yellow</strong>
+                                    </div>
+                                    <div class="item">
+                                        <strong>225</strong>
+                                        <strong>Red</strong>
+                                    </div>
+                                </div>
+        
+                                <div class="hole-detail map">
+                                    <h4>Hole Map</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole09_01_img.png" alt="9홀 지도" width="100%">
+                                </div>
+        
+                                <div class="hole-detail location" >
+                                    <h4>Hole Location</h4>
+                                    <img src="../../assets/images/course-guide/golf/sub_lhole09_02_img.png" alt="9홀 좌표" width="100%">
+                                </div>
+                            </div>
+    
+                            <div class="hole-detail video">
+                                <h4>Hole video</h4>
+                                <!-- 동영상 -->
+                                <video width="100%;" controls playsinline preload="metadata" src="https://www.blackstonebelleforet.com/upfile/image/golfhole/a8372657-6263-4d51-b257-dd3a07a05396.mp4#t=0.5"></video>
+                                <!-- 동영상 -->
+                            </div>
+    
+                        </article>
+                        
+                    </div>
+                    <!-- //9홀 탭 콘텐츠 부분 -->                       
+    
+                </div>
+                <!-- 탭 콘텐츠 -->
+
+            </div>
+            <!-- //홀 리스트 탭 메뉴-->
+
+            <div style="padding:0 20px;">
+                <div class="sub-main-info-link"> 
+
+                    <div class="img-bg" style="background-image: url(../../assets/images/link-mountain-view-img-2.png)">
+                        <a href="#">MOUNTAIN VIEW</a>
+                        <p>
+                            아름다운 숲의 정취와 탁 트인 전망에<br>
+                            시원한 청량감을 느끼는 코스
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="general-btn">
+                    <button type="button" class="btn-1 mint">실시간 예약</button>
+                    <!-- 활성화 class="mint, white" / 비활성화 class="grey" -->
+                </div>
+
+            </div>
+         
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="padding:30px 20px 25px;">
+
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 6,
+            spaceBetween: 0,
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            pagination: {
+            el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 60000,
+            },
+            loop : true, 
+        });
+
+        //2022/08/24 수정
+        //swiper 센터 맞추기
+        var snbSwiperItem = $('.mySwiper1 .swiper-wrapper .swiper-slide');
+        snbSwiperItem.click(function(){
+            var target = $(this);
+            muCenter(target);
+        })
+
+        function muCenter(target){
+            var snbwrap = $('.mySwiper1 .swiper-wrapper');
+            var targetPos = target.position();
+            var box = $('.mySwiper1');
+            var boxHarf = box.width()/2;
+            var pos;
+            var listWidth=0;
+            
+            snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
+            
+            var selectTargetPos = targetPos.left + target.outerWidth()/2;
+            if (selectTargetPos <= boxHarf) { // left
+                pos = 0;
+            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                pos = listWidth-box.width();
+            }else {
+                pos = selectTargetPos - boxHarf;
+            }
+            
+            setTimeout(function(){snbwrap.css({
+                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+                "transition-duration": "500ms"
+            })}, 200); 
+        }
+        // //2022/08/24 수정
+
+    </script>
+
+</body>
+
+</html>

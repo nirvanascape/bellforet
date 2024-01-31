@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-reservation-room-main">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>객실예약</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main reservation-room-main">
+
+            <div class="reservation-visual" style="background-image: url(../../assets/images/sub_condovisual_img.png)">
+                <h2>객실예약</h2>
+                <p>
+                    원남호의 정취가 한눈에 들어오는 전망에서<br>
+                    꿈처럼 달콤한 휴식을 선사합니다.
+                </p>
+            </div>
+
+            <div style="padding:0 20px;">
+
+                <!-- 2022/08/01 수정 -->
+                <!-- 페이지이동 리스트 -->
+                <div class="res-page-list drop-content-reverse">
+
+                    <a href="#" role="button" class="title drop-btn">
+                        <h3>콘도예약</h3>
+                        <span></span>
+                    </a>
+                    <ul class="check page-list">
+                        <li>
+                            <a href="#">콘도메인</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">콘도예약</a>
+                        </li>
+                        <li>
+                            <a href="#">콘도 예약안내</a>
+                        </li>
+                        <li>
+                            <a href="#">콘도 객실안내</a>
+                        </li>
+                        <li>
+                            <a href="#">펫포레 객실안내</a>
+                        </li>
+                        <li>
+                            <a href="#">펫포레 부대시설</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //페이지이동 리스트 -->
+
+                <!-- <div class="course-list-border tab">
+
+                    <ul class="tab-menu">
+                        <li class="active">벨라고예약</li>
+                        <li>펫포레예약</li>
+                    </ul>
+
+                </div> -->
+                <!-- //2022/08/01 수정 -->
+
+                <!-- 예약일자 선택 -->
+                <article class="reservation-date">
+
+                    <strong class="bold-ico date">입실일을 선택해주세요</strong>
+                    <!-- 달력 -->
+                    <div class="calendar">
+
+                        <div class="content_sub booking-wrap">
+
+                            <div class="cm_reservation">
+
+                                <!-- 달력표기정보 -->
+                                <ul class="color_info_ul">
+                                    <li class="today">오늘</li>
+                                    <li><span class="reserve_live"></span>예약</li>
+                                    <li><span class="reserve_end"></span>마감</li>
+                                </ul>
+                                <!-- //달력표기정보 -->
+
+                                <div class="cm_calender_area_in">
+                                    
+                                    <!-- 달력 상단 연도, 날짜 -->
+                                    <div class="cm_calender_top">
+                                        <strong>2019.02</strong>
+                                        <a class="left"
+                                            href="#">&lt;
+                                            이전달</a>
+                                        <a class="right"
+                                            href="#">다음달
+                                            &gt;</a>
+                                    </div>
+                                    <!-- //달력 상단 연도, 날짜 -->
+
+                                    <!-- 달력 테이블 -->
+                                    <table summary="예약일자를 선택할 수 있습니다" class="cm_calender_tbl">
+
+                                        <!-- 
+                                        상태별 추가될 Class명
+
+                                        공휴일 class="hol"
+                                        토요일 class="sat"
+                                        선택 class="cal_focus"
+                                        오늘 class="cal_today"
+                                        예약 class="cal_res"
+                                        마감 class="cal_end" 
+                                        -->
+
+                                        <caption class="blind">예약 달력</caption>
+                                        <colgroup>
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                            <col width="14.2%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <!-- 
+                                                    공휴일
+                                                    th class="hol" 또는
+                                                    td class="hol" 추가
+                                                -->
+                                                <th class="hol" scope="col">일</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">화</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">목</th>
+                                                <th scope="col">금</th>
+                                                <!-- 
+                                                    토요일 
+                                                    th class="sat" 또는
+                                                    td class="sat" 추가
+                                                -->
+                                                <th class="sat" scope="col">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="hol">
+                                                </td>
+                                                <td>
+                                                    <a href="#"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#"></a>
+                                                </td>
+                                                <td>
+                                                    <!-- 
+                                                        오늘 
+                                                        a class="cal_today" 추가
+                                                    -->
+                                                    <a class="cal_today" href="#">1</a>
+                                                </td>
+                                                <!-- 
+                                                    토요일 
+                                                    th class="sat" 또는
+                                                    td class="sat" 추가
+                                                -->
+                                                <td class="sat">
+                                                    <!-- 
+                                                        선택 
+                                                        a class="cal_focus" 추가
+                                                    -->
+                                                    <a class="cal_focus" href="#">2</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <!-- 
+                                                    공휴일 
+                                                    th class="sat" 또는
+                                                    td class="sat" 추가
+                                                -->
+                                                <td class="hol">
+                                                    <!-- 
+                                                        마감 
+                                                        a class="cal_end" 추가
+                                                    -->
+                                                    <a class="cal_end" href="#">3</a>
+                                                </td>
+                                                <td>
+                                                    <!-- 
+                                                        예약
+                                                        a class="cal_res" 추가
+                                                    -->
+                                                    <a class="cal_res" href="#">4</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">5</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">6</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">7</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">8</a>
+                                                </td>
+                                                <td class="sat">
+                                                    <a class="" href="#">9</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hol">
+                                                    <a class="" href="#">10</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">11</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">12</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">13</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">14</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">15</a>
+                                                </td>
+                                                <td class="sat">
+                                                    <a class="" href="#">16</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hol">
+                                                    <a class="" href="#">17</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">18</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">19</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">20</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">21</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">22</a>
+                                                </td>
+                                                <td class="sat">
+                                                    <a class="" href="#">23</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hol">
+                                                    <a class="" href="#">24</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">25</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">26</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">27</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href="#">28</a>
+                                                </td>
+                                                <td>
+                                                    <a class="" href=""></a>
+                                                </td>
+                                                <td class="sat">
+                                                    <a class="" href=""></a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!-- //달력 테이블 -->
+                                                                                        
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- //달력 -->
+
+                </article>
+                <!-- //예약일자 선택 -->
+
+                <!-- 예약일자 선택이 없는 초기화면 -->
+                <div class="impossibility">
+                    <p class="brown">
+                        예약 가능일자를 선택해주세요.
+                    </p>
+                </div>
+                <!-- //예약일자 선택이 없는 초기화면 -->
+
+                <!-- 예약일자 선택되면 나타나는 부분  -->
+                <article class="reservation-room">
+
+                    <strong class="bold-ico room">예약가능 객실</strong>
+
+                    <div class="room-view">
+
+                        <h4>벨라고 16평형</h4>
+                        <!-- 2022/08/19 수정 -->
+                        <span>
+                            기준인원2명 잔여방수:0<br>
+                            (인원 추가 불가, 미취학 1인까지 가능)
+                        </span>
+                        <!-- //2022/08/19 수정 -->
+                        <!-- //2022/08/19 수정2 -->
+                        <div class="room-img" style="background-image:url(../../assets/images/sub_condoView16_img_2.png);"></div>
+                        <!-- //2022/08/19 수정2 -->
+                        <button type="button" class="grey">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+
+                    <div class="room-view">
+
+                        <h4>벨라고 35평형</h4>
+                        <span>기준인원4명(+2) 잔여방수:0</span>
+                        <div class="room-img" style="background-image:url(../../assets/images/sub_condoView35_img.png);"></div>
+                        <button type="button" class="grey">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+
+
+
+                    <div class="room-view">
+
+                        <h4>벨라고 51평형</h4>
+                        <span>기준인원6명(+2) 잔여방수:2</span>
+                        <div class="room-img" style="background-image:url(../../assets/images/sub_condoView16_img.png);"></div>
+                        <button type="button" class="mint">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+
+                    <!-- 2022/08/01 수정 -->
+                    <div class="room-view">
+
+                        <h4>펫포레 16평형</h4>
+                        <!-- 2022/08/19 수정 -->
+                        <span>
+                            기준인원2명 잔여방수:0<br>
+                            (인원 추가 불가, 미취학 1인까지 가능)
+                        </span>
+                        <!-- //2022/08/19 수정 -->
+                        <div class="room-img" style="background-image:url(../../assets/images/course-guide/room/sub_petView_img.png);"></div>
+                        <button type="button" class="grey">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+
+                    <div class="room-view">
+
+                        <h4>펫포레 35평형</h4>
+                        <span>기준인원4명(+2) 잔여방수:0</span>
+                        <div class="room-img" style="background-image:url(../../assets/images/course-guide/room/sub_petView_img.png);"></div>
+                        <button type="button" class="grey">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+
+                    <div class="room-view">
+
+                        <h4>펫포레 51평형</h4>
+                        <span>기준인원6명(+2) 잔여방수:2</span>
+                        <div class="room-img" style="background-image:url(../../assets/images/course-guide/room/sub_petView_img.png);"></div>
+                        <button type="button" class="mint">선택하기</button>
+                        <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+
+                    </div>
+                    <!-- //2022/08/01 수정 -->
+
+                </article>
+                <!-- //예약일자 선택되면 나타나는 부분  -->
+
+            </div>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <div style="padding:30px 20px 25px;">
+    
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+    
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+    
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+    
+            </div>
+    
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

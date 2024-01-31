@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-pay-detail-list">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>결제내역상세</h2>
+            <button type="button" class="filter-search"></button>
+            <button type="button" class="shopping-basket">
+                <span>4</span>
+            </button>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main pay-detail-list">
+
+            <div class="pay-list-top">
+                <p class="num">주문번호 123456789</p>
+                <dl>
+                    <dt>결제일</dt>
+                    <dd>2022.01.26</dd>
+                </dl>
+            </div>
+
+            <!-- 주문티켓 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>주문티켓</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="check">
+
+                    <!-- 티켓 -->
+                    <div class="user-info">
+                        <dl>
+                            <dt>티켓명</dt>
+                            <dd>[주중] 익스트림루지 2회</dd>
+                        </dl>
+                        <dl>
+                            <dt>유효기간</dt>
+                            <dd>2022.01.20 ~ 2022.02.28</dd>
+                        </dl>
+                        <dl>
+                            <dt>구매금액</dt>
+                            <dd>
+                                <span class="original-price">정상가24,000원</span>
+                                할인가21,000원
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>티켓수량</dt>
+                            <dd>1매</dd>
+                        </dl>
+                        <dl>
+                            <dt>티켓상태</dt>
+                            <dd>사용중</dd>
+                        </dl>
+                        <button type="button" class="info-btn mini white">결제취소</button>
+                        <!-- 활성화 class="white" / 비활성화 class="grey" -->
+                    </div>
+                    <!-- //티켓 -->
+
+                    <!-- 티켓 -->
+                    <div class="user-info">
+                        <dl>
+                            <dt>티켓명</dt>
+                            <dd>[주중] 익스트림루지 2회</dd>
+                        </dl>
+                        <dl>
+                            <dt>유효기간</dt>
+                            <dd>2022.01.20 ~ 2022.02.28</dd>
+                        </dl>
+                        <dl>
+                            <dt>구매금액</dt>
+                            <dd>
+                                <span class="original-price">정상가24,000원</span>
+                                할인가21,000원
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>티켓수량</dt>
+                            <dd>1매</dd>
+                        </dl>
+                        <dl>
+                            <dt>티켓상태</dt>
+                            <dd>사용중</dd>
+                        </dl>
+                        <button type="button" class="info-btn mini grey">결제취소</button>
+                        <!-- 활성화 class="white" / 비활성화 class="grey" -->
+                    </div>
+                    <!-- //티켓 -->
+
+                </div>
+            </div>
+            <!-- //주문티켓 -->
+
+            <!-- 주문자정보 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>주문자 정보</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="user-info check">
+                    <dl>
+                        <dt>이름</dt>
+                        <dd>김태희</dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰번호</dt>
+                        <dd>010-1234-1234</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>test1234@gmail.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //주문자정보 -->
+            
+            <!-- 결제수단 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>결제수단</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="user-info check">
+                    <dl>
+                        <dt>카드결제</dt>
+                        <dd>54,000원</dd>
+                    </dl>
+                    <dl>
+                        <dt>결제카드</dt>
+                        <dd>신한(0000********0000)</dd>
+                    </dl>
+                    <dl>
+                        <dt>할부</dt>
+                        <dd>일시불</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- //결제수단 -->
+
+            <!-- 결제금액 -->
+            <div class="pay-info drop-content">
+                <div class="title">
+                    <h3>결제금액</h3>
+                    <button type="button" class="drop-btn"></button>
+                </div>
+                <div class="set-ticket-price check">
+                    <div class="flex-sb">
+                        <span>티켓수량</span>
+                        <strong>총 <em>4</em>매</strong>
+                    </div>
+                    <div class="flex-sb">
+                        <span>티켓금액</span>
+                        <strong>54,000원</strong>
+                    </div>
+                    <div class="flex-sb">
+                        <span>온라인 할인</span>
+                        <strong>-6,000원</strong>
+                    </div>
+                    <div class="flex-sb all">
+                        <span>총 티켓금액</span>
+                        <strong>48,000원</strong>
+                    </div>
+                </div>  
+            </div>
+            <!-- //결제금액 -->
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- 하단안내 -->
+        <div class="footer-guide">
+            <p>
+                <strong>1. 카드결제/간편결제</strong>
+                <br>
+                3~7영업일내 취소 또는 환불되며, 취소 및 환불이 이루어지지 않을 경우, 카드사 또는 간편결제서비스 제공업체에 문의하여 주시기 바랍니다.
+            </p>
+
+            <p>
+                <strong>2. 환불처리(자동환불)</strong> 
+                <br>
+                티켓 사용 유효기간 중 사용하지 않은 티켓은 유효기간이 지난 시점에 자동 환불처리가 진행됩니다. 금액 환불 시점은 결제 방식에 따른 안내를 참고해주시기 바랍니다.
+            </p>
+            <!-- 22/02/23 수정 -->
+        </div>
+        <!-- //하단안내 -->
+
+        <!-- 하단메뉴 -->
+        <div class="bottom-btn">	
+            <button class="btn-1 mint">마이티켓 바로가기</button>
+        </div>
+        <!-- //하단메뉴 -->
+
+        <!-- 결제취소팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-full timer-popup">
+
+                <header>
+                    <h2>결제취소</h2>
+                    <button type="button"><span class="blind">닫기</span></button>
+                </header>
+
+                <section class="main pay-cancle">
+                    <div class="top-con">
+                        <div class="deco-img"></div>
+                        <p>결제취소가 요청되었습니다.</p>
+                    </div>
+                    <!-- 티켓 -->
+                    <div class="user-info" style="padding:12px 20px">
+                        <dl>
+                            <dt>티켓명</dt>
+                            <dd>[주중] 익스트림루지 2회</dd>
+                        </dl>
+                        <dl>
+                            <dt>유효기간</dt>
+                            <dd>2022.01.20 ~ 2022.02.28</dd>
+                        </dl>
+                        <dl>
+                            <dt>구매금액</dt>
+                            <dd>
+                                <span class="original-price">정상가24,000원</span>
+                                할인가21,000원
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>티켓수량</dt>
+                            <dd>1매</dd>
+                        </dl>
+                    </div>
+                    <!-- //티켓 -->
+                </section>
+                
+                <!-- 하단안내 -->
+                <div class="footer-guide">
+                    <p>
+                        <strong>1. 카드결제/간편결제</strong>
+                        <br>
+                        3~7영업일내 취소 또는 환불되며, 취소 및 환불이 이루어지지 않을 경우, 카드사 또는 간편결제서비스 제공업체에 문의하여 주시기 바랍니다.
+                    </p>
+        
+                    <p>
+                        <strong>2. 환불처리(자동환불)</strong> 
+                        <br>
+                        티켓 사용 유효기간 중 사용하지 않은 티켓은 유효기간이 지난 시점에 자동 환불처리가 진행됩니다. 금액 환불 시점은 결제 방식에 따른 안내를 참고해주시기 바랍니다.
+                    </p>
+                    <!-- 22/02/23 수정 -->
+                </div>
+                <!-- //하단안내 -->
+
+            </div>
+        </div>
+        <!-- //결제취소팝업 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

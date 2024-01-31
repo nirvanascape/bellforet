@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-login">
+
+        <!-- 헤더 -->
+        <header class="sub-header2">
+            <button type="button" class="prev"></button>
+            <a href="#"  class="logo" title="메인바로가기"><h1></h1></a>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main login">
+
+            <div class="wave-bg">
+                <p class="greeting">안녕하세요</p>
+                <strong>벨포레 리조트입니다.</strong>
+                <p class="guide">
+                    회원이 되시면 벨포레 리조트의<br>
+                    다양한 혜택과 서비스를 누릴 수 있습니다.
+                </p>
+                <button type="button" class="right-arrow">회원가입</button>
+            </div>
+            <img src="../../assets/images/wave.png" width="100%;"></img>
+
+            <div style="padding:26px 20px 0;">
+
+                <form action="">
+                    <div class="form-area">
+                        <input type="text" id="" title="아이디 또는 회원번호를 입력해주세요" placeholder="아이디 또는 회원번호를 입력해주세요." />
+                    </div>
+                    <div class="form-area">
+                        <div class="password" style="position:relative;">
+                            <input type="password" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요." />
+                            <button type="button" class="blind-eyes"></button>
+                        </div>
+                    </div>
+                    <div class="set flex-s">
+                        <div class="ob2">
+                            <input type="checkbox" id="c1">
+                            <label for="c1"><span></span>아이디 저장</label>
+                        </div>
+                        <div class="ob2">
+                            <input type="checkbox" id="c2">
+                            <label for="c2"><span></span>자동 로그인</label>
+                        </div>
+                    </div>
+                    <button type="button" class="mint">로그인</button>
+                    <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+                </form>
+
+                <div class="user-search">
+                    <button type="button">아이디 찾기</button>
+                    <span></span>
+                    <button type="button">비밀번호 찾기</button>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+    </div>
+
+    <!-- 얼럿팝업 -->
+    <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+    <div class="popup-content-alert" style="display:none;">
+        <p>아이디 또는 비밀번호를 확인해주세요.</p>
+    </div>
+    <!-- //얼럿팝업 -->
+
+    <!-- 비밀번호 변경 안내 팝업 -->
+    <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+    <div class="popup-bg" style="display:none;">
+        <div class="popup-content-full">
+            <header>
+                <a href="#"  class="logo" title="메인바로가기"><h1></h1></a>
+                <button type="button"><span class="blind">닫기</span></button>
+            </header>
+            <section class="main password-change">
+                <div class="deco-img"></div>
+                <h4>비밀번호 변경안내</h4>
+                <p class="line-text">
+                    “고객님은 3개월동안 비밀번호를<br>
+                    변경하지 않으셨습니다.”<br>
+                    비밀번호 변경으로 소중한 개인정보를 지켜주세요. 
+                </p>
+                <p class="exp-text">
+                    장기간 비밀번호를 변경하지 않고
+                    동일한 비밀번호를 사용중인 경우, 개인정보를 안전하게 보호하고, 개인정보 도용으로 인한 피해를 방지하기 위해 
+                    주기적으로 비밀번호를 변경하도록 안내해드리고 있습니다.<br><br>
+
+                    고객님의 소중한 정보 보호를 위하여 적극적인 참여 부탁드립니다.
+                </p>
+                <div class="flex-sb">
+                    <button class="btn-2 white">90일간보지않기</button>
+                    <button class="btn-2 mint">변경하기</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- //비밀번호 변경 안내 팝업 -->
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

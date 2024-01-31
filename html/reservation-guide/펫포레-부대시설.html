@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-room-facilities">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>부대시설</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main room-facilities">
+
+            <div class="reservation-visual" style="background-image: url(../../assets/images/course-guide/room/sub_condoinfo_img.png)">
+                <h2>부대시설</h2>
+                <p>
+                    아름다운 공간에서<br>
+                    반려견과 함께 하는 행복한시간
+                </p>
+            </div>
+
+            <div style="padding:0 20px;">
+                
+                <!-- 페이지이동 리스트 -->
+                <div class="res-page-list drop-content-reverse">
+
+                    <a href="#" role="button" class="title drop-btn">
+                        <h3>펫포레 부대시설</h3>
+                        <span></span>
+                    </a>
+                    <ul class="check page-list">
+                        <li>
+                            <a href="#">콘도메인</a>
+                        </li>
+                        <li>
+                            <a href="#">콘도예약</a>
+                        </li>
+                        <li>
+                            <a href="#">콘도 예약안내</a>
+                        </li>
+                        <li>
+                            <a href="#">콘도 객실안내</a>
+                        </li>
+                        <li>
+                            <a href="#">펫포레 객실안내</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">펫포레 부대시설</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <!-- //페이지이동 리스트 -->
+
+                <div class="course-list-border tab">
+
+                    <!-- 탭 리스트 -->
+                    <ul class="tab-menu">
+                        <li class="active">플레이 그라운드</li>
+                        <li>힐링코스</li>
+                    </ul>
+                    <!-- //탭 리스트 -->
+
+                    <div class="tab-content">
+
+                        <!-- 첫번째 탭 콘텐츠 부분 -->
+                        <div>
+
+                            <div class="sub-main-text">
+    
+                                <h3 class="sub-main-text-title">펫포레 플레이 그라운드</h3>
+                
+                            </div>
+
+                            <!-- 이미지 스와이프 -->
+                            <div class="hole-img-swiper">
+
+                                <div class="swiper-container mySwiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_playground_1.jpg" alt="플레이 그라운드 이미지1">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_playground_2.jpg" alt="플레이 그라운드 이미지2">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_playground_3.jpg" alt="플레이 그라운드 이미지3">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_playground_4.jpg" alt="플레이 그라운드 이미지4">
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div> 
+
+                            </div>
+                            <!-- //이미지 스와이프 --> 
+
+                            <article class="sub-title-list">
+                                <dl class="row">
+                                    <dt>· 위치 :</dt>
+                                    <!-- 2022/08/18 수정 -->
+                                    <dd>&nbsp;콘도 103동 앞 플레이그라운드</dd>
+                                    <!-- //2022/08/18 수정 -->
+                                </dl>
+                                <dl class="row">
+                                    <dt>· 문의 :</dt>
+                                    <dd>&nbsp;043-926-1001~3</dd>
+                                </dl>
+                            </article>
+
+                            <section class="sub-list-detail">
+
+                                <article>
+                                    <h4><strong>운영안내</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt><일반 반려견 동반고객 대상 운영안내></dt>
+                                        <dd>토 / 일 / 공휴일 운영</dd>
+                                        <dd>10:00 ~ 17:00</dd>
+                                        <dd class="reper">펫룸 이용고객은 숙박기간 동안 입장이 가능합니다.</dd> 
+                                    </dl>
+                                </article>
+                                <article>
+                                    <h4><strong>반려견 입장조건</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt></dt>
+                                        <dd>5kg 미만 반려견 (소형견) : 소형견,중형견 놀이터 이용 가능</dd>
+                                        <dd>5kg 이상 ~ 15kg 미만 반려견 (중형견) : 중형견 놀이터 이용 가능</dd>
+                                        <dd class="reper">동물보호법에 따른 맹견 입장제한</dd> 
+                                    </dl>
+                                </article>
+                                <article>
+                                    <h4><strong>이용가격</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt>< 일반 반려견 동반고객 대상 운영안내 ></dt>
+                                        <dd>견주 1인 5,000원</dd>
+                                        <dd>반려견 1마리 7,000원</dd>
+                                        <dd class="reper">벨포레 앱으로 펫포레 플레이그라운드 입장티켓 결제시
+                                            19% 할인혜택이 제공됩니다.</dd> 
+                                        <dd class="reper">현장발권의 경우 플레이그라운드 내 "펫포레 스토어"에서
+                                            발권을 진행합니다. (펫포레 스토어 : 토/일/공휴일 운영)</dd> 
+                                    </dl>
+                                    <dl class="left-bar">
+                                        <dt><할인></dt>
+                                        <dd>장애인 보조견 무료입장<br>
+                                            (장애인 보조견 조끼착용 확인 후 입장)</dd>
+                                        <dd>유아 36개월 미만 무료입장</dd>
+                                    </dl>
+                                    <dl class="left-bar">
+                                        <dt><펫룸 이용고객></dt>
+                                        <dd>펫룸 숙박기간 동안 무료입장</dd>
+                                        <dd>단, 객실 입실인원 초과 입장 시 초과인원은 유료입장</dd>
+                                    </dl>
+                                    <p>※ 콘도 체크인시 제공되는 손목밴드(팔찌티켓)을 착용 후 이용하여 주시기 바랍니다.</p>
+                                </article>
+                                <article>
+                                    <h4><strong>이용수칙 및 펫티켓</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt></dt>
+                                        <dd>리조트 내 이동시 2M 목줄 의무 착용<br>
+                                            (반려견이 목줄 밖으로 빠져나오지 않도록 주의)</dd>
+                                        <dd>1견당 1인 견주 동행 및 관리 (견주 기준 : 키 140cm 이상)</dd>
+                                        <dd>견주는 반려견만 두고 이동 불가</dd> 
+                                        <dd>반려견 배설물은 견주가 정리</dd>
+                                        <dd>반려견의 공격성으로 주변에 불안감 조성시 시설이용 거부</dd>
+                                        <dd>위험상황 발생시 견주는 반려견을 안아서 대상과 분리</dd>
+                                    </dl>
+                                </article>
+
+                            </section>
+
+                            <img src="../../assets/images/course-guide/room/petforet_playground_map.png" alt="펫포레그라운드지도" width="100%" style="margin-bottom:12px;">
+
+                            <div class="general-btn">
+                                <button type="button" class="btn-1 mint">티켓구매</button>
+                                <!-- 활성화 class="mint, white" / 비활성화 class="grey" -->
+                            </div>
+
+                            <div class="sub-main-info-link"> 
+
+                                <div class="img-bg" style="background-image: url(../../assets/images/course-guide/room/sub_healingV_img.png">
+                                    <a href="#" class="healing">펫포레 힐링코스</a>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <!-- //첫번째 탭 콘텐츠 부분 -->
+
+
+                        <!-- 두번째 탭 콘텐츠 부분 -->
+                        <div>
+
+                            <div class="sub-main-text">
+    
+                                <h3 class="sub-main-text-title">펫포레 힐링코스</h3>
+                
+                            </div>
+
+                            <!-- 이미지 스와이프 -->
+                            <div class="hole-img-swiper">
+
+                                <div class="swiper-container mySwiper">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_healing_1.png" alt="플레이 힐링코스 이미지1">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_healing_2.png" alt="플레이 힐링코스 이미지2">
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="../../assets/images/course-guide/room/petforet_healing_3.png" alt="플레이 힐링코스 이미지3">
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div> 
+
+                            </div>
+                            <!-- //이미지 스와이프 --> 
+
+                            <article class="sub-title-list">
+                                <dl class="row">
+                                    <dt>· 위치 :</dt>
+                                    <dd>&nbsp;플레이그라운드 - 마리나클럽 둘레</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt>· 문의 :</dt>
+                                    <dd>&nbsp;1566-0162</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt>· 이용시간 :</dt>
+                                    <dd>&nbsp;10:00 ~ 17:00</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt>· 거리 :</dt>
+                                    <dd>&nbsp;편도 773m / 왕복 988m</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt>· 편의시설 :</dt>
+                                    <dd>&nbsp;화장실, 벤치</dd>
+                                </dl>
+                            </article>
+
+                            <section class="sub-list-detail">
+
+                                <article>
+                                    <h4><strong>운영안내</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt></dt>
+                                        <dd>힐링코스는 완만한 수변에 조성되어 있으므로, 반려견이
+                                            호수로 뛰어드는 일이 없도록 각별히 신경 써 주시기 바랍
+                                            니다.</dd>
+                                        <dd>힐링코스 바닥에 보라색 선이 표시된 구간은 킥보드가 이동
+                                            할 수 있습니다.</dd>
+                                        <dd>킥보드 이용고객을 만나게 될 경우 반려견을 안거나, 안전
+                                            하게 길 한쪽으로 이동하여 주시기 바랍니다.</dd> 
+                                        <dd>지정된 펫포레 동선 외 반려견 입장이 불가합니다.</dd>
+                                        <dd>반려견은 2M 목줄을 착용하여 이동하여 주시기 바랍니다.</dd>
+                                        <dd>1견당 1인 견주 동행 및 관리 원칙을 지켜주시기 바랍니다.
+                                            (견주 기준 : 키 140cm 이상)</dd>
+                                    </dl>
+                                    <p>※ 지정된 펫포레 동선 외 반려견 입장이 불가합니다.</p>
+                                </article>
+                                <article>
+                                    <h4><strong>공통사항</strong></h4>
+                                    <dl class="left-bar">
+                                        <dt></dt>
+                                        <dd>리조트 내에서 발생하는 반려견으로 인한 인적 사고,
+                                            피해 발생에 대해서는 전적인 보호자 책임 및 배상이 원칙
+                                            이오니 반려견 관리에 각별히 신경써주시기 바랍니다.</dd>
+                                        <dd>펫포레 전 구간은 금연, 취사금지, 화재주의 구역 입니다</dd>
+                                    </dl>
+                                </article>
+
+                            </section>
+
+                            <div class="sub-main-info-link" style="margin:0;"> 
+
+                                <div class="img-bg" style="background-image: url(../../assets/images/course-guide/room/groundV_img.png)">
+                                    <a href="#" class="ground">플레이 그라운드</a>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <!-- //두번째 탭 콘텐츠 부분 -->
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="padding:30px 20px 25px;">
+
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 60000,
+            },
+            loop : true, 
+        });
+
+    </script>
+
+</body>
+
+</html>

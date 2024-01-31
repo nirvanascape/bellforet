@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-reservation-golf-res">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>예약하기</h2>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main reservation-golf-res">
+
+            <!-- 예약정보 -->
+            <div class="res-info">
+                <dl>
+                    <dt class="res-icon user">신청자</dt>
+                    <dd>홍길동</dd>
+                </dl>
+                <dl>
+                    <dt class="res-icon date">예약일자</dt>
+                    <dd>2022-06-22(금)</dd>
+                </dl>
+                <dl>
+                    <dt class="res-icon course">코스/홀/시간</dt>
+                    <dd>Lake/18홀/06:30</dd>
+                </dl>
+            </div>
+            <!-- //예약정보 -->
+
+            <article class="res-price-info">
+                <dl>
+                    <!-- 2022/08/19 수정 -->
+                    <dt>정상가</dt>
+                    <!-- //2022/08/19 수정 -->
+                    <dd class="original-price">165,000원</dd>
+                </dl>
+                <dl>
+                    <dt>인터넷 회원가</dt>
+                    <dd class="members-price"><strong>145,000원</strong></dd>
+                </dl>
+            </article>
+
+            <!-- 연락처 -->
+            <form action="">
+                <div class="form-area">
+                    <div class="member-cell-phone">
+                        <h3 class="input-title">연락처</h3>
+                        <div class="flex-sb">
+                            <select name="" id="" class="one-third" title="휴대폰번호 앞자리 선택">
+                                <option value="">010</option>
+                                <option value="">011</option>
+                                <option value="">016</option>
+                                <option value="">017</option>
+                                <option value="">018</option>
+                                <option value="">019</option>
+                            </select>
+                            <span>
+                                <em>-</em>
+                            </span>
+                            <!-- 2022/07/18  수정 -->
+                            <input type="text" class="one-third" title="휴대폰번호 가운데 네자리 숫자" maxlength="4" oninput="maxLengthNum(this)">
+                            <span>
+                                <em>- </em>
+                            </span>
+                            <input type="text" class="one-third" title="휴대폰번호 마지막 네자리 숫자" maxlength="4" oninput="maxLengthNum(this)">
+                            <!-- //2022/07/18  수정 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //연락처 -->
+
+                <!-- 위임예약, 내방객명 가능 회원일 때 나오는 화면 -->
+                <hr class="line-hr">
+
+                <strong class="middle-title">위임예약</strong>
+
+                <div class="form-area form-area-2">
+
+                    <h3 class="input-title-2">성명</h3>
+                    <!-- 2022/08/18 수정 -->
+                    <input type="text" id="" title="이름"/>   
+                    <!-- //2022/08/18 수정 -->
+
+                </div>
+
+                <div class="form-area form-area-2">
+                   
+                    <h3 class="input-title-2">연락처</h3>
+                    <div class="flex-sb">
+                        <select name="" id="" class="one-third" title="휴대폰번호 앞자리 선택">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">016</option>
+                            <option value="">017</option>
+                            <option value="">018</option>
+                            <option value="">019</option>
+                        </select>
+                        <span>
+                            <em>-</em>
+                        </span>
+                        <!-- 2022/07/18  수정 -->
+                        <input type="text" class="one-third" title="휴대폰번호 가운데 네자리 숫자" maxlength="4" oninput="maxLengthNum(this)">
+                        <span>
+                            <em>- </em>
+                        </span>
+                        <input type="text" class="one-third" title="휴대폰번호 마지막 네자리 숫자" maxlength="4" oninput="maxLengthNum(this)">
+                        <!-- //2022/07/18  수정 -->
+                    </div>
+                    
+                </div>
+                <!-- //위임예약, 내방객명 가능 회원일 때 나오는 화면 -->
+                
+            </form>
+
+            <div class="notice-res">
+                <p class="title brown">※ 알려 드립니다.</p>
+                <p>
+                    당 클럽에서는 TEE-OFF 시간을 준수하고 있습니다.
+                    원활한 경기진행을 위해 <span class="brown">30분전 내장, 10분전 라운드</span>를
+                    준비해 주시기 바랍니다.
+                </p>
+                <p>
+                    예약취소는 4일전 17:00 이전까지 취소가 가능합니다. 
+                    이후 취소는 위약금 및 패널티 부과 적용으로 예약실로 
+                    문의 바랍니다.<br>
+                    예약실 (1566-0162 또는 043-926-1000)
+                </p>
+            </div>
+
+            <!-- 정보수신동의 체크박스 -->
+            <div class="chk-res">   
+                <div class="chk-one">
+                    <div>
+                        <input type="checkbox" id="c-1" name="chk-one">
+                        <label for="c-1"><span></span>
+                           예약 시 유의 사항을 확인하였으며 부과금액 사항에 동의합니다.
+                        </label>
+                    </div>
+                </div>
+                <div class="chk-one">
+                    <div>
+                        <input type="checkbox" id="c-2" name="chk-one">
+                        <label for="c-2"><span></span>
+                            개인정보 제공에 동의합니다.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- //정보수신동의 체크박스 -->
+
+            <!-- 2022/07/18  수정 -->
+            <div class="bottom-btn">	
+                <button type="button" class="btn-1 mint" onClick="openLayer('popup1')">예약하기</button>
+                <!-- 활성화 class="mint" / 비활성화 class="grey" -->
+            </div>
+            <!-- //2022/07/18  수정 -->
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+
+            <ul class="sns-area">
+                <li>
+                    <a href="#" class="instagram" style="background-image:url(../../assets/images/main_insta_icon.png);">
+                        <span class="blind">벨포레 인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="blog" style="background-image:url(../../assets/images/main_blog_icon.png);">
+                        <span class="blind">벨포레 블로그</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="padding:30px 20px 25px;">
+
+                <strong class="title">벨포레 고객센터 <span>1566 - 0612</span></strong>
+
+                <ul class="terms-area">
+        
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일 무단수집거부</a>
+                    </li>
+
+                </ul>
+        
+                <address class="footer-address">
+        
+                    <p>
+                    상호명 : (주)블랙스톤에듀팜리조트<br>
+                    대표이사: 원성역<br>
+                    사업자번호 : 535-86-00475<br>
+                    통신판매업 신고번호 : 제 2019충북증평00041 호
+                    </p>
+        
+                </address>
+        
+                <small>
+                    COPYRIGHT BLACK STONE BELLE FORET.<br>
+                    ALL RIGHTS RESERVED.
+                </small>
+
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <!-- 2022/07/18  수정 -->
+    <!-- 예약완료팝업 -->
+    <div id="popup1" class="popup-bg">
+        <div class="common-popup">
+            <div class="scroll">
+            <!-- 내용이 길어지면 스크롤 생김 -->
+                <p style="text-align: center;">
+                    <span>2022-06-22</span>일자<br>
+                    <span>Lake</span>코스<br>
+                    <span>06:30</span>타임을<br>
+                    예약 하시겠습니까?
+                    <br><br>
+                    예약이 확정되면 문자로<br>
+                    예약내역이 발송됩니다.
+                </p>
+            </div>
+            <div class="common-popup-btn">
+                <button type="button" class="white" onClick="closeLayer('popup1')">취소</button>
+                <button type="button" class="mint">확인</button>
+            </div>
+        </div>
+    </div>
+    <!-- //예약완료팝업 -->
+    <!-- //2022/07/18  수정 -->
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

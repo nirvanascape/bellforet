@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap wrap-pay-done">
+
+        <!-- 헤더 -->
+        <header class="sub-header">
+            <button type="button" class="prev">
+            </button>
+            <h2>결제내역</h2>
+            <button type="button" class="filter-search"></button>
+            <button type="button" class="shopping-basket">
+                <span>4</span>
+            </button>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 메인컨텐츠 -->
+        <section class="main pay-detail">
+
+            <article class="pay-ticket">
+
+                <div class="top">
+                    <h3 class="title">[주중] 익스트림루지 2회</h3>
+                    <a href="#" role="button" class="detail-btn">주문상세</a>
+                </div>
+                <div class="user-info">
+                    <dl>
+                        <dt>결제일</dt>
+                        <dd>2022.01.20</dd>
+                    </dl>
+                    <dl>
+                        <dt>유효기간</dt>
+                        <dd>2022.01.20 ~ 2022.02.28</dd>
+                    </dl>
+                    <dl>
+                        <dt>구매금액</dt>
+                        <dd>
+                            <span class="original-price">정상가24,000원</span>
+                            할인가21,000원
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>티켓수량</dt>
+                        <dd>1매</dd>
+                    </dl>
+                    <dl>
+                        <dt>티켓상태</dt>
+                        <dd>사용가능</dd>
+                    </dl>
+                </div>
+
+            </article>
+
+            <article class="pay-ticket">
+
+                <div class="top">
+                    <h3 class="title">[주중] 익스트림루지 2회</h3>
+                    <a href="#" role="button" class="detail-btn">주문상세</a>
+                </div>
+                <div class="user-info">
+                    <dl>
+                        <dt>결제일</dt>
+                        <dd>2022.01.20</dd>
+                    </dl>
+                    <dl>
+                        <dt>유효기간</dt>
+                        <dd>2022.01.20 ~ 2022.02.28</dd>
+                    </dl>
+                    <dl>
+                        <dt>구매금액</dt>
+                        <dd>
+                            <span class="original-price">정상가24,000원</span>
+                            할인가21,000원
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>티켓수량</dt>
+                        <dd>1매</dd>
+                    </dl>
+                    <dl>
+                        <dt>티켓상태</dt>
+                        <dd>사용가능</dd>
+                    </dl>
+                </div>
+
+            </article>
+
+        </section>
+        <!-- //메인컨텐츠 -->
+
+        <!-- footer -->
+        <footer class="main-footer">
+            <ul class="sns-area">
+            <li>
+                <a href="#" class="instagram" style="background-image: url(../../assets/images/main_insta_icon.png);">
+                <span class="blind">벨포레 인스타그램</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="blog" style="background-image: url(../../assets/images/main_blog_icon.png)">
+                <span class="blind">벨포레 블로그</span>
+                </a>
+            </li>
+            </ul>
+
+            <div style="padding: 30px 20px 25px">
+            <!-- 2022/08/19 수정2 -->
+            <strong class="title">벨포레 고객센터 <span>1566 - 0162</span></strong>
+            <!-- //2022/08/19 수정2 -->
+
+            <ul class="terms-area">
+                <li>
+                <a href="#">이용약관</a>
+                </li>
+                <li>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li>
+                <a href="#">영상정보처리기기 운영관리방침</a>
+                </li>
+                <li>
+                <a href="#">이메일 무단수집거부</a>
+                </li>
+            </ul>
+
+            <address class="footer-address">
+                <p>
+                상호명 : (주)블랙스톤에듀팜리조트<br />
+                대표이사: 원성역<br />
+                주소 : 충청북도 증평군 도안면 벨포레길 346<br />
+                사업자번호 : 535-86-00475<br />
+                통신판매업 신고번호 : 제 2019충북증평00041 호
+                </p>
+            </address>
+
+            <small>
+                <!-- 2022/08/18 수정 -->
+                Copyright 2022. BLACK STONE BELLE FORET inc.<br />
+                all rights reserved.
+                <!-- //2022/08/18 수정 -->
+            </small>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <!-- 검색필터 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-select">
+                <section class="main">
+                    <span class="">현재일 기준 최대 1년까지 조회가 가능합니다.</span>
+                    
+                    
+                </section>
+            </div>
+        </div>
+        <!-- //검색필터 팝업 -->
+
+        <!-- 티켓상태선택 팝업 -->
+        <!-- 숨김처리 해둔 상태입니다. style="display:none;" -> style="display:block;"으로 변경하시면 됩니다. -->
+        <div class="popup-bg" style="display:none;">
+            <div class="popup-content-select">
+                <section class="main">
+                    <p class="select-title">티켓상태 선택</p>
+                    <div class="popup-scroll">
+                        <ul class="select">
+                            <li>전체</li>
+                            <li>사용가능</li>
+                            <li>사용중</li>
+                            <li>사용완료</li>
+                            <li>결제취소</li>
+                            <li>환불처리</li>
+                            <li>유효기간만료</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //티켓상태선택 팝업 -->
+
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>
